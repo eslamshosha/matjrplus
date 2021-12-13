@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "trutiger";
+    src: url("../webfonts/frutiger/FrutigerLTArabic-45Light.woff2") format("woff2"),
+    url("../webfonts/frutiger/FrutigerLTArabic-45Light.woff") format("woff"),
+    url("../webfonts/frutiger/FrutigerLTArabic45Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "trutiger";
+    src: url("../webfonts/frutiger/FrutigerLTArabic-55Roman.woff2") format("woff2"),
+    url("../webfonts/frutiger/FrutigerLTArabic-55Roman.woff") format("woff"),
+    url("../webfonts/frutiger/FrutigerLTArabic55Roman.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "trutiger";
+    src: url("../webfonts/frutiger/FrutigerLTArabic-65Bold.woff2") format("woff2"),
+    url("../webfonts/frutiger/FrutigerLTArabic-65Bold.woff") format("woff"),
+    url("../webfonts/frutiger/FrutigerLTArabic65Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "trutiger";
+    src: url("../webfonts/frutiger/FrutigerLTArabic-75Black.woff2") format("woff2"),
+    url("../webfonts/frutiger/FrutigerLTArabic-75Black.woff") format("woff"),
+    url("../webfonts/frutiger/frutigerltarabic75black.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
