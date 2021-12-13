@@ -290,10 +290,11 @@ header {
   border: 2px solid #53b847;
   color: #bbbbbb;
 }
-.autoComplete_wrapper > input::placeholder {
+.autoComplete_wrapper > input::placeholder,
+.autoComplete_wrapper > input:focus::placeholder {
     color: #bbbbbb;
 }
-.autoComplete_wrapper > input:hover{
+.autoComplete_wrapper > input:hover::placeholder{
     color: #bbbbbb;
 }
 .search-button {
@@ -432,6 +433,10 @@ html[dir="ltr"] .items-count {
   text-transform: capitalize;
   transition: all 0.3s ease-in-out;
 }
+html[dir=ltr] .menu-link{
+  font-size: 13px;
+  padding: 0px 10px;
+}
 .menu-link:hover {
   color: #53b847;
 }
@@ -494,6 +499,10 @@ html[dir="ltr"] .items-count {
 .main,
 .swiper-cont {
   position: relative;
+  min-height: 100%;
+}
+.main-slider .swiper-slide{
+  min-height: 100%;
 }
 .main .pro-img {
   display: -webkit-box;
@@ -507,9 +516,18 @@ html[dir="ltr"] .items-count {
   justify-content: center;
   overflow: hidden;
   width: 100%;
+  overflow: hidden;
+  padding-top: 55%;
+  background: white;
+  position: relative;
 }
 .main .pro-img img {
   width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 .main-slider .swiper-btn {
   position: absolute;

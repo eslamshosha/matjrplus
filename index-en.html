@@ -5,597 +5,1106 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>future medical</title>
+    <title>supermarket light</title>
     <link rel="icon" href="images/fav.png" type="image/png">
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/autoComplete.css">
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
-    <!-- header section -->
-    <!-- header section -->
-    <header>
-        <div class="top-header">
-            <div class="container">
-                <div class="first-header">
-                    <div class="icon-logo">
-                        <figure class="img-logo">
-                            <a href="#"><img src="images/logo.png" class="img-responsive"></a>
-                        </figure>
+    <div class="outer-wrapper">
+        <div id="main">
+            <!-- side-nav -->
+            <div id="mySidenav" class="sidenav">
+                <ul class="accordion fixall" id="accordionExample">
+                <li><a href="/#">home</a></li>
+                <li><a href="/#">Offers and discounts</a></li>
+                <li><a href="/#">recently arrived</a></li>
+                <li><a href="#" class="custom-link">Product Categories</a></li>
+                <li>
+                    <div class="drop_">
+                    <a class="drop-link" role="button" data-toggle="collapse" data-target="#acff">
+                        Vegetables
+                    </a>
+                    <ul id="acff" class="collapse drop-list fixall">
+                        <li><a href="#">Vegetables </a></li>
+                    </ul>
                     </div>
-                    <div class="search-section">
-                        <form class="search-form">
-                            <input class="search-input" type="text" name="search" value=""
-                                placeholder="What are you looking for">
-                            <button class="search-button">
-                                <span class="fa fa-search"></span>
-                            </button>
-                        </form>
+                </li>
+                <li>
+                    <div class="drop_">
+                    <a class="drop-link" role="button" data-toggle="collapse" data-target="#acff2">
+                        Fruits
+                    </a>
+                    <ul id="acff2" class="collapse drop-list fixall">
+                        <li><a href="#">Fruits </a></li>
+                        <li><a href="#">Fruits </a></li>
+                    </ul>
                     </div>
-                    <div class="icons-cont">
-                        <div class="register-section">
-                            <div class="dropdown user-anchor add-margin">
-                                <div href="#" class="add-to">
-                                    <span class="fas fa-user icon-ancor"></span>
-                                    <span class="hide-txt">my account</span>
-                                    <div class="dropdown-content">
-                                        <a class="cat-drop" href="#">Login</a>
-                                        <a class="cat-drop" href="#">new account</a>
-                                    </div>
-                                </div>    
+                </li>
+                <li>
+                    <div class="drop_">
+                    <a class="drop-link" role="button" data-toggle="collapse" data-target="#acff3">
+                        dates
+                    </a>
+                    <ul id="acff3" class="collapse drop-list fixall">
+                        <li><a href="#">dates </a></li>
+                        <li><a href="#">dates </a></li>
+                    </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="drop_">
+                    <a class="drop-link" role="button" data-toggle="collapse" data-target="#acff4">
+                        meat
+                    </a>
+                    <ul id="acff4" class="collapse drop-list fixall">
+                        <li><a href="#"> meat</a></li>
+                        <li><a href="#"> meat</a></li>
+                    </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="drop_">
+                    <a class="drop-link" role="button" data-toggle="collapse" data-target="#acff5">
+                        chicken
+                    </a>
+                    <ul id="acff5" class="collapse drop-list fixall">
+                        <li><a href="#"> chicken </a></li>
+                        <li><a href="#"> chicken </a></li>
+                    </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="drop_">
+                    <a class="drop-link" role="button" data-toggle="collapse" data-target="#acff6">
+                        canned food
+                    </a>
+                    <ul id="acff6" class="collapse drop-list fixall">
+                        <li><a href="#">canned food</a></li>
+                        <li><a href="#">canned food</a></li>
+                    </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="drop_">
+                    <a class="drop-link" role="button" data-toggle="collapse" data-target="#acff7">
+                        drinks
+                    </a>
+                    <ul id="acff7" class="collapse drop-list fixall">
+                        <li><a href="#">Mineral water </a></li>
+                        <li><a href="#">Carbonated water </a></li>
+                    </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="drop_">
+                    <a class="drop-link" role="button" data-toggle="collapse" data-target="#acff8">
+                       papers
+                    </a>
+                    <ul id="acff8" class="collapse drop-list fixall">
+                        <li><a href="#">papers</a></li>
+                        <li><a href="#">papers</a></li>
+                    </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="drop_">
+                    <a class="drop-link" role="button" data-toggle="collapse" data-target="#acff9">
+                        gasoline generators
+                    </a>
+                    <ul id="acff9" class="collapse drop-list fixall">
+                        <li><a href="#"> gasoline generators</a></li>
+                        <li><a href="#"> gasoline generators</a></li>
+                    </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="drop_">
+                    <a class="drop-link" role="button" data-toggle="collapse" data-target="#acff10">
+                        Housewares
+                    </a>
+                    <ul id="acff10" class="collapse drop-list fixall">
+                        <li><a href="#">Housewares</a></li>
+                        <li><a href="#">Housewares</a></li>
+                    </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="drop_">
+                    <a class="drop-link" role="button" data-toggle="collapse" data-target="#acff11">
+                        desktop gadgets
+                    </a>
+                    <ul id="acff11" class="collapse drop-list fixall">
+                        <li><a href="#">desktop gadgets</a></li>
+                        <li><a href="#">desktop gadgets</a></li>
+                    </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="drop_">
+                    <a class="drop-link" role="button" data-toggle="collapse" data-target="#acff12">
+                        Games and kids
+                    </a>
+                    <ul id="acff12" class="collapse drop-list fixall">
+                        <li><a href="#">Games and kids</a></li>
+                        <li><a href="#">Games and kids</a></li>
+                    </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="drop_">
+                    <a class="drop-link" role="button" data-toggle="collapse" data-target="#acff13">
+                        health and beauty
+                    </a>
+                    <ul id="acff13" class="collapse drop-list fixall">
+                        <li><a href="#"> health and beauty </a></li>
+                        <li><a href="#"> health and beauty </a></li>
+                    </ul>
+                    </div>
+                </li>
+    
+                <li>
+                    <div class="lang_menu">
+                    <h3 class="list-h">language</h3>
+                    <a href="index.html">العربية</a>
+                    </div>
+                </li>
+                </ul>
+            </div>
+            <!-- side-nav -->
+            <!-- header section -->
+            <header>
+                <div class="upper-header">
+                    <div class="container-fluid">
+                        <div class="upper-cont">
+                            <div class="upper-info">
+                              <div class="upper-text">
+                                <img src="images/icon-1.png">
+                                <span> Paiement when recieving</span>
+                              </div>
+                              <div class="upper-text">
+                                <img src="images/icon-2.png">
+                                <span>Free shipping for orders over 500 riyals</span>
+                              </div>
+                              <div class="upper-text">
+                                <img src="images/icon-3.png">
+                                <span>Free return of goods</span>
+                              </div>
                             </div>
-                            <div href="#" class="add-to">
-                                <span class="fas fa-shopping-cart icon-ancor"></span>
-                                <span class="hide-txt">cart</span>
+                            <div class="upper-lang">
+                              <a href="./index.html">
+                                العربية
+                              </a>
                             </div>
-                        </div>
-                        <div class="lang-cont">
-                            <div class="lang-section">
-                                <img src="images/lang.png" alt="lang-img">
-                                <div class="dropdown">
-                                    <span class="lang-word chevron-down">English</span>
-                                    <div class="dropdown-content">
-                                        <a class="cat-drop" href="index-en.html">English</a>
-                                        <a class="cat-drop" href="index.html">العربيه</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="show-icons">
-                            <a class="menu-bars fixall" id="menu-id" href="#!">
-                                <i class="fas fa-bars"></i>
-                            </a>
-                        </div>
+                          </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="overlay" style="display: block;"></div>
-        <nav>
-            <div class="nav-head">
-                <div class="lang-section hide-big">
-                    <img src="images/lang.png" alt="lang-img">
-                    <div class="dropdown">
-                        <span class="lang-word chevron-down">English</span>
-                        <div class="dropdown-content">
-                            <a class="cat-drop" href="index-en.html">English</a>
-                            <a class="cat-drop" href="index.html">العربيه</a>
-                        </div>
-                    </div>
-                </div>
-                <a class="fixall close-btn">
-                    <i class="fas fa-times"></i>
-                </a>
-            </div>
-            <div class="nav-header">
-                <div class="container">
-                    <div class="navgition">
-                        <ul class="big-menu list-unstyled">
-                            <li class="menu-list hide-big">
-                                <a href="#" class="menu-link">
-                                    home
-                                </a>
-                            </li>
-                            <li class="menu-list">
-                                <a href="#" class="menu-link">
-                                    oxygen devices
-                                </a>
-                            </li>
-                            <li class="menu-list">
-                                <a href="#" class="menu-link">
-                                    sleep devices
-                                </a>
-                            </li>
-                            <li class="menu-list">
-                                <a href="#" class="menu-link">
-                                    Sleeping accessories
-                                </a>
-                            </li>
-                            <li class="menu-list">
-                                <div class="dropdown">
-                                    <span class="menu-link menu-drop chevron-down">Oxygen equipment supplies</span>
-                                    <div class="dropdown-content">
-                                        <a class="cat-drop" href="#">long nasal tube</a>
-                                        <a class="cat-drop" href="#">oxygen connection</a>
-                                        <a class="cat-drop" href="#">hydration box</a>
-                                        <a class="cat-drop" href="#">oxygen concentrator filter</a>
-                                    </div>
+                <div class="top-header">
+                    <div class="container-fluid">
+                        <div class="first-header">
+                            <div class="icon-logo">
+                                <div class="show-icons">
+                                    <a class="menu-bars fixall" id="menu-id" href="#!" onclick="openNav()">
+                                        <i class="fas fa-bars"></i>
+                                    </a>
                                 </div>
-                            </li>
-                            <li class="menu-list">
-                                <a href="#" class="menu-link">
-                                    Spray Therapy Devices
-                                </a>
-                            </li>
-                            <li class="menu-list">
-                                <a href="#" class="menu-link">
-                                    Vital Signs Monitoring Devices
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <!-- header section -->
-    <!-- main slider -->
-    <div class="main-slider">
-        <div class="swiper-cont">
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="main">
-                            <a href="#!" class="pro-img">
-                                <img src="images/main-slider/01.jpg" class="img-responsive">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="main">
-                            <a href="#!" class="pro-img">
-                                <img src="images/main-slider/01.jpg" class="img-responsive">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="main">
-                            <a href="#!" class="pro-img">
-                                <img src="images/main-slider/01.jpg" class="img-responsive">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-pagination"></div>
-            </div>
-            <div class="swiper-btn-prev swiper-btn"><i class="fas fa-chevron-right"></i></div>
-            <div class="swiper-btn-next swiper-btn"><i class="fas fa-chevron-left"></i></div>
-        </div>
-    </div>
-    <!-- main slider -->
-    <!-- small-banner section -->
-    <div class="small-banner-section">
-        <div class="container">
-            <div class="small-banner-cont">
-                <div class="row">
-                    <div class="col-md-4 wow bounceInUp banner-cont" wow-data-delay="5s">
-                        <a href="#!" class="small-banner-img">
-                            <img src="images/banner/01.jpg" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col-md-4 wow bounceInUp banner-cont" wow-data-delay="5s">
-                        <a href="#!" class="small-banner-img">
-                            <img src="images/banner/02.jpg" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col-md-4 wow bounceInUp banner-cont" wow-data-delay="5s">
-                        <a href="#!" class="small-banner-img">
-                            <img src="images/banner/03.jpg" class="img-responsive">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- small-banner section -->
-    <!-- product slider -->
-    <div class="product-section product-one">
-        <div class="container">
-            <div class="wow fadeInDown" wow-data-delay="5s">
-                <h2 class="product-head">recently arrived</h2>
-            </div>
-            <div class="product-slider">
-                <div class="swiper-container">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                      <!-- Slides -->
-                        <div class="swiper-slide">
-                            <div class="product">
-                                <a href="#!" class="product-img">
-                                    <img src="images/product-slider/01.jpg" class="img-responsive">
-                                </a>
-                                <div class="product-content">
-                                    <a class="product-name" href="#!">
-                                        oxygen meter
-                                    </a>
-                                    <div class="price-box">
-                                        <span class="first-price">900 SAR</span>
-                                        <span class="last-price">1200 SAR</span>
-                                    </div>
-                                    <a href="#" class="product-button">
-                                        add to cart
-                                    </a>
-                                </div> 
-                            </div>   
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="product">
-                                <a href="#!" class="product-img">
-                                    <img src="images/product-slider/02.jpg" class="img-responsive">
-                                </a>
-                                <div class="product-content">
-                                    <a class="product-name" href="#!">
-                                        oxygen meter
-                                    </a>
-                                    <div class="price-box">
-                                        <span class="first-price">900 SAR</span>
-                                        <span class="last-price">1200 SAR</span>
-                                    </div>
-                                    <a href="#" class="product-button">
-                                        add to cart
-                                    </a>
-                                </div> 
-                            </div>   
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="product">
-                                <a href="#!" class="product-img">
-                                    <img src="images/product-slider/03.jpg" class="img-responsive">
-                                </a>
-                                <div class="product-content">
-                                    <a class="product-name" href="#!">
-                                        oxygen meter
-                                    </a>
-                                    <div class="price-box">
-                                        <span class="first-price">900 SAR</span>
-                                        <span class="last-price">1200 SAR</span>
-                                    </div>
-                                    <a href="#" class="product-button">
-                                        add to cart
-                                    </a>
-                                </div> 
-                            </div>   
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="product">
-                                <a href="#!" class="product-img">
-                                    <img src="images/product-slider/04.jpg" class="img-responsive">
-                                </a>
-                                <div class="product-content">
-                                    <a class="product-name" href="#!">
-                                        oxygen meter
-                                    </a>
-                                    <div class="price-box">
-                                        <span class="first-price">900 SAR</span>
-                                        <span class="last-price">1200 SAR</span>
-                                    </div>
-                                    <a href="#" class="product-button">
-                                        add to cart
-                                    </a>
-                                </div> 
-                            </div>   
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-pagination"></div>
-                  
-                <div class="swiper-btn-prev swiper-btn"><span class="fas fa-chevron-right"></span></div>
-                <div class="swiper-btn-next swiper-btn"><span class="fas fa-chevron-left"></span></div>
-            </div>
-        </div>
-    </div>
-    <!-- product slider -->
-    <!-- big-banner section -->
-    <section class="big-banner-section">
-        <div class="container">
-            <div class="big-banner-cont wow fadeInDown" wow-data-delay="5s">
-                <a href="#"><img src="images/banner/big-banner.jpg" alt="banner-image" class="img-responsive"></a> 
-            </div>
-        </div>
-    </section>
-    <!-- big-banner section --> 
-    <!-- product slider -->
-    <div class="product-section product-two">
-        <div class="container">
-            <div class="wow fadeInDown" wow-data-delay="5s">
-                <h2 class="product-head">Best seller</h2>
-            </div>
-            <div class="product-slider">
-                <div class="swiper-container">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                      <!-- Slides -->
-                        <div class="swiper-slide">
-                            <div class="product">
-                                <a href="#!" class="product-img">
-                                    <img src="images/product-slider/01.jpg" class="img-responsive">
-                                </a>
-                                <div class="product-content">
-                                    <a class="product-name" href="#!">
-                                        oxygen meter
-                                    </a>
-                                    <div class="price-box">
-                                        <span class="first-price">900 SAR</span>
-                                        <span class="last-price">1200 SAR</span>
-                                    </div>
-                                    <a href="#" class="product-button">
-                                        add to cart
-                                    </a>
-                                </div> 
-                            </div>   
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="product">
-                                <a href="#!" class="product-img">
-                                    <img src="images/product-slider/02.jpg" class="img-responsive">
-                                </a>
-                                <div class="product-content">
-                                    <a class="product-name" href="#!">
-                                        oxygen meter
-                                    </a>
-                                    <div class="price-box">
-                                        <span class="first-price">900 SAR</span>
-                                        <span class="last-price">1200 SAR</span>
-                                    </div>
-                                    <a href="#" class="product-button">
-                                        add to cart
-                                    </a>
-                                </div> 
-                            </div>   
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="product">
-                                <a href="#!" class="product-img">
-                                    <img src="images/product-slider/03.jpg" class="img-responsive">
-                                </a>
-                                <div class="product-content">
-                                    <a class="product-name" href="#!">
-                                        oxygen meter
-                                    </a>
-                                    <div class="price-box">
-                                        <span class="first-price">900 SAR</span>
-                                        <span class="last-price">1200 SAR</span>
-                                    </div>
-                                    <a href="#" class="product-button">
-                                        add to cart
-                                    </a>
-                                </div> 
-                            </div>   
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="product">
-                                <a href="#!" class="product-img">
-                                    <img src="images/product-slider/04.jpg" class="img-responsive">
-                                </a>
-                                <div class="product-content">
-                                    <a class="product-name" href="#!">
-                                        oxygen meter
-                                    </a>
-                                    <div class="price-box">
-                                        <span class="first-price">900 SAR</span>
-                                        <span class="last-price">1200 SAR</span>
-                                    </div>
-                                    <a href="#" class="product-button">
-                                        add to cart
-                                    </a>
-                                </div> 
-                            </div>   
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-pagination"></div>
-                  
-                <div class="swiper-btn-prev swiper-btn"><span class="fas fa-chevron-right"></span></div>
-                <div class="swiper-btn-next swiper-btn"><span class="fas fa-chevron-left"></span></div>
-            </div>
-        </div>
-    </div>
-    <!-- product slider -->
-    <!-- feature section -->
-    <section class="feature-section">
-        <div class="container">
-            <div class="features">
-                <div class="features-div">
-                    <div class="row">
-                        <div class="col-md-3 col-xs-12">
-                            <div class="features-box" href="#">
-                                <span class="fas fa-star features-icon"></span>
-                                <div class="features-text">
-                                    <h5 class="features-h">Featured Products</h5>
-                                    <span class="features-span">original products 100%</span>
-                                </div>
+                                <figure class="img-logo">
+                                    <a href="#"><img src="images/logo.png" class="img-responsive"></a>
+                                </figure>
                             </div>
-                        </div>
-                        <div class="col-md-3 col-xs-12">
-                            <div class="features-box" href="#">
-                                <span class="fas fa-shield-alt features-icon"></span>
-                                <div class="features-text">
-                                    <h5 class="features-h">payment methods</h5>
-                                    <span class="features-span">secure payment methods 100%</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-xs-12">
-                            <div class="features-box" href="#">
-                                <span class="fas fa-headset features-icon"></span>
-                                <div class="features-text">
-                                    <h5 class="features-h">customer service</h5>
-                                    <span class="features-span">Outstanding customer service 24/7</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-xs-12">
-                            <div class="features-box" href="#">
-                                <span class="fas fa-archive features-icon"></span>
-                                <div class="features-text">
-                                    <h5 class="features-h">free shipping</h5>
-                                    <span class="features-span">For orders over 299 riyals</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-pagination"></div>
-        </div>
-    </section>
-    <!-- feature section -->
-    <!-- footer section -->
-    <footer>
-        <div class="container">
-            <div class="first-footer">
-                <div class="row">
-                    <div class="col-lg-8 col-xs-12">
-                        <div class="footer-list">
-                            <div class="row">
-                                <div class="col-sm-3 col-xs-12">
-                                    <div class="nav-foot-cont">
-                                        <h2 class="nav-foot-header foot-header">informations</h2>
-                                        <ul class="nav-foot list-unstyled">
-                                            <li class="nav-foot-li">
-                                                <a href="#" class="nav-foot-link">about us</a>
-                                            </li>
-                                            <li class="nav-foot-li">
-                                                <a href="#" class="nav-foot-link">Shipping and delivery</a>
-                                            </li>
-                                            <li class="nav-foot-li">
-                                                <a href="#" class="nav-foot-link">bank accounts</a>
-                                            </li>
-                                            <li class="nav-foot-li">
-                                                <a href="#" class="nav-foot-link">Privacy</a>
-                                            </li>
-                                            <li class="nav-foot-li">
-                                                <a href="#" class="nav-foot-link">Terms of use</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3 col-xs-12">
-                                    <div class="nav-foot-cont">
-                                        <h2 class="nav-foot-header foot-header">customers service</h2>
-                                        <ul class="nav-foot list-unstyled">
-                                            <li class="nav-foot-li">
-                                                <a href="#" class="nav-foot-link">contact us</a>
-                                            </li>
-                                            <li class="nav-foot-li">
-                                                <a href="#" class="nav-foot-link">return order</a>
-                                            </li>
-                                            <li class="nav-foot-li">
-                                                <a href="#" class="nav-foot-link">Site Map</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3 col-xs-12">
-                                    <div class="nav-foot-cont">
-                                        <h2 class="nav-foot-header foot-header">extra</h2>
-                                        <ul class="nav-foot list-unstyled">
-                                            <li class="nav-foot-li">
-                                                <a href="#" class="nav-foot-link">companies</a>
-                                            </li>
-                                            <li class="nav-foot-li">
-                                                <a href="#" class="nav-foot-link">Gift vouchers</a>
-                                            </li>
-                                            <li class="nav-foot-li">
-                                                <a href="#" class="nav-foot-link">commission system</a>
-                                            </li>
-                                            <li class="nav-foot-li">
-                                                <a href="#" class="nav-foot-link">Special Offers</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3 col-xs-12">
-                                    <div class="nav-foot-cont">
-                                        <h2 class="nav-foot-header foot-header">my account</h2>
-                                        <ul class="nav-foot list-unstyled">
-                                            <li class="nav-foot-li">
-                                                <a href="#" class="nav-foot-link">my account</a>
-                                            </li>
-                                            <li class="nav-foot-li">
-                                                <a href="#" class="nav-foot-link">My requests</a>
-                                            </li>
-                                            <li class="nav-foot-li">
-                                                <a href="#" class="nav-foot-link">Wish List</a>
-                                            </li>
-                                            <li class="nav-foot-li">
-                                                <a href="#" class="nav-foot-link">Mailing List</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-xs-12">
-                        <div class="news-letter">
-                            <form action="" method="post">
-                                <h3 class="news-header foot-header">Newsletter</h3>
-                                <span class="news-span">Subscribe to the newsletter to receive all new</span>
-                                <div class="newsletter-cont">
-                                    <input type="email" name="txtemail" value="" class="newsletter-input"
-                                        placeholder="Enter your email">
-                                    <button type="submit" class="newsletter-button">
-                                        <span>Subscribe</span>
+                            <div class="search-section">
+                                <form class="search-form">
+                                    <input class="search-input" type="text" name="search" value=""
+                                        placeholder="What are you looking for?" id="autoComplete">
+                                    <button class="search-button">
+                                        <span class="fa fa-search"></span>
                                     </button>
+                                </form>
+                            </div>
+                            <div class="icons-cont">
+                                <div class="register-section">
+                                    <div class="user-log">
+                                        <div class="dropdown">
+                                            <a href="#" class="user-ancor" data-toggle="modal" data-target="#login-modal">
+                                                <i class="fas fa-user"></i>
+                                                <span class="hide-txt">Login / New registration</span>
+                                            </a>
+                                            <div class="dropdown-content">
+                                                <a class="cat-drop" href="#">sign in</a>
+                                                <a class="cat-drop" href="#">new registration</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="add-to">
+                                        <button class="add-btn">
+                                            <span class="fas fa-shopping-cart icon-ancor"></span>
+                                            <span class="items-count">0</span>
+                                        </button>
+                                    </div>
                                 </div>
-                            </form>
+                            </div>
                         </div>
-                        <div class="social">
-                            <a href="#" class="social-link">
-                                <i class="fab fa-facebook-f"></i>
+                    </div>
+                </div>
+                <nav class="menu-nav">
+                    <ul class="big-menu list-unstyled">
+                        <li class="menu-list">
+                            <a href="#" class="menu-link">
+                                Offers and discounts
                             </a>
-                            <a href="#" class="social-link">
-                                <i class="fab fa-twitter"></i>
+                        </li>
+                        <li class="menu-list">
+                            <a href="#" class="menu-link">
+                                recently arrived
                             </a>
-                            <a href="#" class="social-link">
-                                <i class="fab fa-instagram"></i>
+                        </li>
+                        <li class="menu-list">
+                            <a href="#" class="menu-link">
+                                Vegetables
                             </a>
-                            <a href="#" class="social-link">
-                                <i class="fab fa-whatsapp"></i>
+                        </li>
+                        <li class="menu-list">
+                            <a href="#" class="menu-link">
+                                Fruits
                             </a>
-                            <a href="#" class="social-link">
-                                <i class="fab fa-snapchat-ghost"></i>
+                        </li>
+                        <li class="menu-list megaenu-item">
+                            <a href="#" class="menu-link">dates</a>
+                            <div class="megaenu-1">
+                                <a class="megaenu-link" href="#">raw dates</a>
+                                <a class="megaenu-link" href="#"> pressed dates</a>
+                                <a class="megaenu-link" href="#">  processed dates</a>
+                                <a class="megaenu-link" href="#"> Chocolate Dates</a>
+                                <a class="megaenu-link" href="#">  dates</a>
+                                <a class="megaenu-link" href="#"> date cream</a>
+                                <a class="megaenu-link" href="#"> Maamoul dates</a>
+                                <a class="megaenu-link" href="#">  Lancashire</a>
+                            </div>
+                        </li>
+                        <li class="menu-list">
+                            <a href="#" class="menu-link">
+                                meat
                             </a>
+                        </li>
+                        <li class="menu-list">
+                            <a href="#" class="menu-link">
+                                chicken
+                            </a>
+                        </li>
+                        <li class="menu-list">
+                            <a href="#" class="menu-link">
+                                canned food
+                            </a>
+                        </li>
+                        <li class="menu-list">
+                            <a href="#" class="menu-link">
+                                drinks
+                            </a>
+                        </li>
+                        <li class="menu-list">
+                            <a href="#" class="menu-link">
+                                papers
+                            </a>
+                        </li>
+                        <li class="menu-list">
+                            <a href="#" class="menu-link">
+                                Housewares
+                            </a>
+                        </li>
+                        <li class="menu-list">
+                            <a href="#" class="menu-link">
+                                desktop gadgets
+                            </a>
+                        </li>
+                        <li class="menu-list">
+                            <a href="#" class="menu-link">
+                                kids
+                            </a>
+                        </li>
+                        <li class="menu-list">
+                            <a href="#" class="menu-link">
+                                health
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <!-- header section -->
+            <!-- main slider -->
+            <div class="main-section">
+                <div class="container-fluid">
+                    <div class="main-cont">
+                        <div class="main-slider">
+                            <div class="swiper-cont">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="main">
+                                                <a href="#!" class="pro-img">
+                                                    <img src="images/main-slider/01.jpg" class="img-responsive">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="main">
+                                                <a href="#!" class="pro-img">
+                                                    <img src="images/main-slider/01.jpg" class="img-responsive">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="main">
+                                                <a href="#!" class="pro-img">
+                                                    <img src="images/main-slider/01.jpg" class="img-responsive">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                                <div class="swiper-btn-prev swiper-btn"><i class="fas fa-chevron-right"></i></div>
+                                <div class="swiper-btn-next swiper-btn"><i class="fas fa-chevron-left"></i></div>
+                            </div>
+                        </div>
+                        <div class="main-img-cont">
+                            <figure class="main-figure">
+                                <a href="#">
+                                    <img src="./images/main-slider/sale-img.jpg" class="img-responsive" alt="">
+                                </a>
+                            </figure>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="pay-footer">
-                <figure class="pay-figure">
-                    <img src="images/pay-img.jpg" class="img-responsive pay-img">
-                </figure>
-                <div class="copy-right">
-                    © future medicine company  2021 - 
-                    <span class="design-text">
-                        design and development  
-                        <a href="#"><img src="images/tasawk.png" alt="taswak" class="taswak-img"></a>
-                    </span>
-                </div>      
-            </div>  
+            <!-- main slider -->
+            <!-- product-section -->
+            <div class="product-section">
+                <div class="container-fluid">
+                    <div class="product-cont">
+                        <div class="product-head">
+                            <h2 class="product-h">
+                                Offers
+                            </h2>
+                            <a href="#">
+                                Show more
+                            </a>
+                        </div>
+                        <div class="product-container">
+                            <div class="product">
+                                <a href="#!" class="product-img">
+                                    <img src="images/product-slider/01.jpg" class="img-responsive">
+                                </a>
+                                <div class="product-content">
+                                    <a class="product-name" href="#!">
+                                        product name
+                                    </a>
+                                    <div class="price-box">
+                                        <span class="first-price">10 SAR</span>
+                                        <span class="last-price">15 SAR</span>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="product">
+                                <a href="#!" class="product-img">
+                                    <img src="images/product-slider/02.jpg" class="img-responsive">
+                                </a>
+                                <div class="product-content">
+                                    <a class="product-name" href="#!">
+                                        product name
+                                    </a>
+                                    <div class="price-box">
+                                        <span class="first-price">10 SAR</span>
+                                        <span class="last-price">15 SAR</span>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="product">
+                                <a href="#!" class="product-img">
+                                    <img src="images/product-slider/03.jpg" class="img-responsive">
+                                </a>
+                                <div class="product-content">
+                                    <a class="product-name" href="#!">
+                                        product name
+                                    </a>
+                                    <div class="price-box">
+                                        <span class="first-price">10 SAR</span>
+                                        <span class="last-price">15 SAR</span>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="product">
+                                <a href="#!" class="product-img">
+                                    <img src="images/product-slider/04.jpg" class="img-responsive">
+                                </a>
+                                <div class="product-content">
+                                    <a class="product-name" href="#!">
+                                        product name
+                                    </a>
+                                    <div class="price-box">
+                                        <span class="first-price">10 SAR</span>
+                                        <span class="last-price">15 SAR</span>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="product">
+                                <a href="#!" class="product-img">
+                                    <img src="images/product-slider/05.jpg" class="img-responsive">
+                                </a>
+                                <div class="product-content">
+                                    <a class="product-name" href="#!">
+                                        product name
+                                    </a>
+                                    <div class="price-box">
+                                        <span class="first-price">10 SAR</span>
+                                        <span class="last-price">15 SAR</span>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="product">
+                                <a href="#!" class="product-img">
+                                    <img src="images/product-slider/06.jpg" class="img-responsive">
+                                </a>
+                                <div class="product-content">
+                                    <a class="product-name" href="#!">
+                                        product name
+                                    </a>
+                                    <div class="price-box">
+                                        <span class="first-price">10 SAR</span>
+                                        <span class="last-price">15 SAR</span>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="product">
+                                <a href="#!" class="product-img">
+                                    <img src="images/product-slider/07.jpg" class="img-responsive">
+                                </a>
+                                <div class="product-content">
+                                    <a class="product-name" href="#!">
+                                        product name
+                                    </a>
+                                    <div class="price-box">
+                                        <span class="first-price">10 SAR</span>
+                                        <span class="last-price">15 SAR</span>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="product">
+                                <a href="#!" class="product-img">
+                                    <img src="images/product-slider/08.jpg" class="img-responsive">
+                                </a>
+                                <div class="product-content">
+                                    <a class="product-name" href="#!">
+                                        product name
+                                    </a>
+                                    <div class="price-box">
+                                        <span class="first-price">10 SAR</span>
+                                        <span class="last-price">15 SAR</span>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="product">
+                                <a href="#!" class="product-img">
+                                    <img src="images/product-slider/09.jpg" class="img-responsive">
+                                </a>
+                                <div class="product-content">
+                                    <a class="product-name" href="#!">
+                                        product name
+                                    </a>
+                                    <div class="price-box">
+                                        <span class="first-price">10 SAR</span>
+                                        <span class="last-price">15 SAR</span>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="product">
+                                <a href="#!" class="product-img">
+                                    <img src="images/product-slider/10.jpg" class="img-responsive">
+                                </a>
+                                <div class="product-content">
+                                    <a class="product-name" href="#!">
+                                        product name
+                                    </a>
+                                    <div class="price-box">
+                                        <span class="first-price">10 SAR</span>
+                                        <span class="last-price">15 SAR</span>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="product">
+                                <a href="#!" class="product-img">
+                                    <img src="images/product-slider/11.jpg" class="img-responsive">
+                                </a>
+                                <div class="product-content">
+                                    <a class="product-name" href="#!">
+                                        product name
+                                    </a>
+                                    <div class="price-box">
+                                        <span class="first-price">10 SAR</span>
+                                        <span class="last-price">15 SAR</span>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="product">
+                                <a href="#!" class="product-img">
+                                    <img src="images/product-slider/12.jpg" class="img-responsive">
+                                </a>
+                                <div class="product-content">
+                                    <a class="product-name" href="#!">
+                                        product name
+                                    </a>
+                                    <div class="price-box">
+                                        <span class="first-price">10 SAR</span>
+                                        <span class="last-price">15 SAR</span>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="product">
+                                <a href="#!" class="product-img">
+                                    <img src="images/product-slider/13.jpg" class="img-responsive">
+                                </a>
+                                <div class="product-content">
+                                    <a class="product-name" href="#!">
+                                        product name
+                                    </a>
+                                    <div class="price-box">
+                                        <span class="first-price">10 SAR</span>
+                                        <span class="last-price">15 SAR</span>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="product">
+                                <a href="#!" class="product-img">
+                                    <img src="images/product-slider/14.jpg" class="img-responsive">
+                                </a>
+                                <div class="product-content">
+                                    <a class="product-name" href="#!">
+                                        product name
+                                    </a>
+                                    <div class="price-box">
+                                        <span class="first-price">10 SAR</span>
+                                        <span class="last-price">15 SAR</span>
+                                    </div>
+                                </div> 
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- product-grid -->
+            <!-- product-section -->
+            <div class="product-section">
+                <div class="product-categories">
+                    <h2 class="categories-head">
+                        Shop by department
+                    </h2>
+                    <div class="categories-slider">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="categories-ancor">
+                                        <a class="categories-link" href="#">
+                                            Vegetables
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="categories-ancor">
+                                        <a class="categories-link" href="#">
+                                            fruits
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="categories-ancor">
+                                        <a class="categories-link" href="#">
+                                            dates
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="categories-ancor">
+                                        <a class="categories-link" href="#">
+                                            meat
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="categories-ancor">
+                                        <a class="categories-link" href="#">
+                                            chicken
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="categories-ancor">
+                                        <a class="categories-link" href="#">
+                                            canned food
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="categories-ancor">
+                                        <a class="categories-link" href="#">
+                                            Drinks
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="categories-ancor">
+                                        <a class="categories-link" href="#">
+                                            Vegetables
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="categories-ancor">
+                                        <a class="categories-link" href="#">
+                                            Vegetables
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="categories-ancor">
+                                        <a class="categories-link" href="#">
+                                            Vegetables
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="categories-ancor">
+                                        <a class="categories-link" href="#">
+                                            Vegetables
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="product-cont">
+                        <div class="product-head">
+                            <h2 class="product-h">
+                                recently arrived
+                            </h2>
+                            <a href="#">
+                                Show more
+                            </a>
+                        </div>
+                        <div class="product-container">
+                            <div class="product">
+                                <a href="#!" class="product-img">
+                                    <img src="images/product-slider/01.jpg" class="img-responsive">
+                                </a>
+                                <div class="product-content">
+                                    <a class="product-name" href="#!">
+                                        product name
+                                    </a>
+                                    <div class="price-box">
+                                        <span class="first-price">10 SAR</span>
+                                        <span class="last-price">15 SAR</span>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="product">
+                                <a href="#!" class="product-img">
+                                    <img src="images/product-slider/02.jpg" class="img-responsive">
+                                </a>
+                                <div class="product-content">
+                                    <a class="product-name" href="#!">
+                                        product name
+                                    </a>
+                                    <div class="price-box">
+                                        <span class="first-price">10 SAR</span>
+                                        <span class="last-price">15 SAR</span>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="product">
+                                <a href="#!" class="product-img">
+                                    <img src="images/product-slider/03.jpg" class="img-responsive">
+                                </a>
+                                <div class="product-content">
+                                    <a class="product-name" href="#!">
+                                        product name
+                                    </a>
+                                    <div class="price-box">
+                                        <span class="first-price">10 SAR</span>
+                                        <span class="last-price">15 SAR</span>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="product">
+                                <a href="#!" class="product-img">
+                                    <img src="images/product-slider/04.jpg" class="img-responsive">
+                                </a>
+                                <div class="product-content">
+                                    <a class="product-name" href="#!">
+                                        product name
+                                    </a>
+                                    <div class="price-box">
+                                        <span class="first-price">10 SAR</span>
+                                        <span class="last-price">15 SAR</span>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="product">
+                                <a href="#!" class="product-img">
+                                    <img src="images/product-slider/05.jpg" class="img-responsive">
+                                </a>
+                                <div class="product-content">
+                                    <a class="product-name" href="#!">
+                                        product name
+                                    </a>
+                                    <div class="price-box">
+                                        <span class="first-price">10 SAR</span>
+                                        <span class="last-price">15 SAR</span>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="product">
+                                <a href="#!" class="product-img">
+                                    <img src="images/product-slider/06.jpg" class="img-responsive">
+                                </a>
+                                <div class="product-content">
+                                    <a class="product-name" href="#!">
+                                        product name
+                                    </a>
+                                    <div class="price-box">
+                                        <span class="first-price">10 SAR</span>
+                                        <span class="last-price">15 SAR</span>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="product">
+                                <a href="#!" class="product-img">
+                                    <img src="images/product-slider/07.jpg" class="img-responsive">
+                                </a>
+                                <div class="product-content">
+                                    <a class="product-name" href="#!">
+                                        product name
+                                    </a>
+                                    <div class="price-box">
+                                        <span class="first-price">10 SAR</span>
+                                        <span class="last-price">15 SAR</span>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- product-grid -->
+            <!-- big-banner section -->
+            <section class="big-banner-section">
+                <div class="container-fluid">
+                    <div class="big-banner-cont wow fadeInDown" wow-data-delay="5s">
+                        <a href="#"><img src="images/banner/big-banner.jpg" alt="banner-image" class="img-responsive"></a> 
+                    </div>
+                </div>
+            </section>
+            <!-- big-banner section -->
+            <!-- product-section -->
+            <div class="product-section">
+                <div class="container-fluid">
+                    <div class="product-cont">
+                        <div class="product-head">
+                            <h2 class="product-h">
+                                best seller
+                            </h2>
+                            <a href="#">
+                                Show more
+                            </a>
+                        </div>
+                        <div class="product-container">
+                            <div class="product">
+                                <a href="#!" class="product-img">
+                                    <img src="images/product-slider/01.jpg" class="img-responsive">
+                                </a>
+                                <div class="product-content">
+                                    <a class="product-name" href="#!">
+                                        product name
+                                    </a>
+                                    <div class="price-box">
+                                        <span class="first-price">10 SAR</span>
+                                        <span class="last-price">15 SAR</span>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="product">
+                                <a href="#!" class="product-img">
+                                    <img src="images/product-slider/02.jpg" class="img-responsive">
+                                </a>
+                                <div class="product-content">
+                                    <a class="product-name" href="#!">
+                                        product name
+                                    </a>
+                                    <div class="price-box">
+                                        <span class="first-price">10 SAR</span>
+                                        <span class="last-price">15 SAR</span>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="product">
+                                <a href="#!" class="product-img">
+                                    <img src="images/product-slider/03.jpg" class="img-responsive">
+                                </a>
+                                <div class="product-content">
+                                    <a class="product-name" href="#!">
+                                        product name
+                                    </a>
+                                    <div class="price-box">
+                                        <span class="first-price">10 SAR</span>
+                                        <span class="last-price">15 SAR</span>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="product">
+                                <a href="#!" class="product-img">
+                                    <img src="images/product-slider/04.jpg" class="img-responsive">
+                                </a>
+                                <div class="product-content">
+                                    <a class="product-name" href="#!">
+                                        product name
+                                    </a>
+                                    <div class="price-box">
+                                        <span class="first-price">10 SAR</span>
+                                        <span class="last-price">15 SAR</span>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="product">
+                                <a href="#!" class="product-img">
+                                    <img src="images/product-slider/05.jpg" class="img-responsive">
+                                </a>
+                                <div class="product-content">
+                                    <a class="product-name" href="#!">
+                                        product name
+                                    </a>
+                                    <div class="price-box">
+                                        <span class="first-price">10 SAR</span>
+                                        <span class="last-price">15 SAR</span>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="product">
+                                <a href="#!" class="product-img">
+                                    <img src="images/product-slider/06.jpg" class="img-responsive">
+                                </a>
+                                <div class="product-content">
+                                    <a class="product-name" href="#!">
+                                        product name
+                                    </a>
+                                    <div class="price-box">
+                                        <span class="first-price">10 SAR</span>
+                                        <span class="last-price">15 SAR</span>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="product">
+                                <a href="#!" class="product-img">
+                                    <img src="images/product-slider/07.jpg" class="img-responsive">
+                                </a>
+                                <div class="product-content">
+                                    <a class="product-name" href="#!">
+                                        product name
+                                    </a>
+                                    <div class="price-box">
+                                        <span class="first-price">10 SAR</span>
+                                        <span class="last-price">15 SAR</span>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- product-grid -->
+            <!-- footer section -->
+            <footer>
+                <div class="container-fluid">
+                    <div class="first-footer">
+                        <div class="footer-col">
+                            <figure class="footer-figure">
+                                <img src="./images/footer-logo.png" alt="">
+                            </figure>
+                            <div class="social">
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-snapchat-ghost"></i>
+                                </a>
+                            </div>
+                            <figure class="pay-figure">
+                                <img src="images/pay-img.png" class="img-responsive pay-img">
+                            </figure>
+                            <figure class="symbol-figure">
+                                <img src="images/footer-img.png" class="img-responsive">
+                            </figure>
+                        </div>
+                        <div class="footer-col">
+                            <div class="nav-foot-cont">
+                                <h2 class="nav-foot-header foot-header" data-toggle="collapse" data-target="#footer-list1">contact us</h2>
+                                <ul class="nav-foot list-unstyled collapse" id="footer-list1">
+                                    <li class="nav-foot-li">
+                                        <span class="nav-foot-span">address: </span>
+                                        <a href="#" class="nav-foot-link">Riyadh, Saudi Arabia</a>
+                                    </li>
+                                    <li class="nav-foot-li">
+                                        <span class="nav-foot-span">the phone:</span>
+                                        <a href="tel:+9660123456789" class="nav-foot-link">+9660123456789</a>
+                                    </li>
+                                    <li class="nav-foot-li">
+                                        <span class="nav-foot-span">E-mail:</span>
+                                        <a href="mailto: info@matjrplus.com" class="nav-foot-link">info@matjrplus.com</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-col">
+                            <div class="nav-foot-cont">
+                                <h2 class="nav-foot-header foot-header" data-toggle="collapse" data-target="#footer-list2">informations</h2>
+                                <ul class="nav-foot list-unstyled collapse" id="footer-list2">
+                                    <li class="nav-foot-li">
+                                        <a href="#" class="nav-foot-link">about us</a>
+                                    </li>
+                                    <li class="nav-foot-li">
+                                        <a href="#" class="nav-foot-link">Shipping and delivery information</a>
+                                    </li>
+                                    <li class="nav-foot-li">
+                                        <a href="#" class="nav-foot-link">Privacy policy</a>
+                                    </li>
+                                    <li class="nav-foot-li">
+                                        <a href="#" class="nav-foot-link">Terms and Conditions</a>
+                                    </li>
+                                    <li class="nav-foot-li">
+                                        <a href="#" class="nav-foot-link">contact us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-col">
+                            <div class="nav-foot-cont">
+                                <h2 class="nav-foot-header foot-header" data-toggle="collapse" data-target="#footer-list3">extra</h2>
+                                <ul class="nav-foot list-unstyled collapse" id="footer-list3">
+                                    <li class="nav-foot-li">
+                                        <a href="#" class="nav-foot-link">Return orders</a>
+                                    </li>
+                                    <li class="nav-foot-li">
+                                        <a href="#" class="nav-foot-link">companies</a>
+                                    </li>
+                                    <li class="nav-foot-li">
+                                        <a href="#" class="nav-foot-link">Gift vouchers</a>
+                                    </li>
+                                    <li class="nav-foot-li">
+                                        <a href="#" class="nav-foot-link">commission system</a>
+                                    </li>
+                                    <li class="nav-foot-li">
+                                        <a href="#" class="nav-foot-link">Special Offers</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-col">
+                            <div class="nav-foot-cont">
+                                <h2 class="nav-foot-header foot-header" data-toggle="collapse" data-target="#footer-list3">my account</h2>
+                                <ul class="nav-foot list-unstyled collapse" id="footer-list3">
+                                    <li class="nav-foot-li">
+                                        <a href="#" class="nav-foot-link">my account</a>
+                                    </li>
+                                    <li class="nav-foot-li">
+                                        <a href="#" class="nav-foot-link">my orders</a>
+                                    </li>
+                                    <li class="nav-foot-li">
+                                        <a href="#" class="nav-foot-link">Wish List</a>
+                                    </li>
+                                    <li class="nav-foot-li">
+                                        <a href="#" class="nav-foot-link">Mailing List</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copy-right">
+                        <span class="right-text">
+                            © All rights reserved to my matjrplus Plus for e-commerce services 2018
+                        </span>
+                        <span class="design-text">
+                            design and development 
+                            <a href="#"><img src="images/footer-made.png" alt="" class="footer-made"></a>
+                        </span>
+                    </div>      
+                </div>
+            </footer>            
+            <!-- footer section -->
+            <!-- Start Login Modal -->
+            <div class="modal fade login-modal" id="login-modal" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                    <form class="login-form">
+                        <div class="form-group">
+                            <button class="group-btn face-btn">
+                                <i class="fab fa-facebook-square"></i>
+                                Login with Facebook
+                            </button>
+                            <button class="group-btn twitter-btn">
+                                <i class="fab fa-twitter"></i>
+                                Log in with Twitter
+                            </button>
+                            <span class="or-span">Or</span>
+                        </div>
+                    </form>
+                    </div>
+                    <div class="modal-footer">
+                        <form class="signin-form">
+                            <div class="signin-group">
+                                <input type="email" class="signin-input" placeholder="Mobile number/e-mail">
+                                <input type="password" class="signin-input" placeholder="password">
+                                <button class="signin-btn">
+                                    sign in
+                                </button>
+                            </div>
+                        </form>
+                        <a role="button" data-dismiss="modal" class="forget-pass">
+                            did you forget your password?
+                        </a>
+                        <p class="register-text">
+                            You don't have an account <a href="#">Register now</a>
+                        </p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- End Login Modal -->
+            <!-- overlay -->
+            <div class="overlay-box"></div>
+            <div class="overlay-box2"></div>
+            <!-- overlay -->
         </div>
-    </footer>            
-    <!-- footer section -->
-    <!-- overlay -->
-    <div class="overlay-box"></div>
-    <div class="overlay-box2"></div>
-    <!-- overlay -->
+    </div>
     <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/autoComplete.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/wow.min.js"></script>

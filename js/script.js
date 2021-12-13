@@ -77,4 +77,8 @@ $('.overlay-box').click(function () {
             }
         }
     });
+    if ($(window).width() <= 991) {
+        $('.register-section .user-ancor').removeAttr('data-toggle');
+        $('.register-section .user-ancor').removeAttr('data-target');
+    }
 });
