@@ -517,7 +517,7 @@ html[dir=ltr] .menu-link{
   overflow: hidden;
   width: 100%;
   overflow: hidden;
-  padding-top: 55%;
+  padding-top: 53.1%;
   background: white;
   position: relative;
 }
@@ -528,6 +528,7 @@ html[dir=ltr] .menu-link{
   left: 0;
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 .main-slider .swiper-btn {
   position: absolute;
@@ -557,8 +558,7 @@ html[dir=ltr] .menu-link{
 }
 
 .swiper-btn:hover {
-  color: #fff;
-  background-color: #329865;
+  color: #53b847;
 }
 
 .swiper-btn.swiper-btn-next {
@@ -609,6 +609,7 @@ html[dir=ltr] .menu-link{
   background-color: #fff;
   opacity: 1;
   margin: 0 3px;
+  padding: 5px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   outline: none !important;
@@ -641,7 +642,7 @@ html[dir=ltr] .menu-link{
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
 }
 /*                          main-slider                             */
 /*                            product section                           */
