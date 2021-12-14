@@ -1507,7 +1507,7 @@ html[dir="rtl"] .social {
   background-color: #ddd;
   color: #465a61;
 }
-#content .content-head{
+.subcategory-section .content-head{
   font-size: 27px;
   font-weight: 500;
   color: #465a61;
