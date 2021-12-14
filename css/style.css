@@ -1627,16 +1627,16 @@ html[dir="rtl"] .social {
   .category-sub-product .product-container {
       grid-template-columns: repeat(2, 1fr);
   }
-  html[dir="rtl"] .product:nth-of-type(3n) {
+  html[dir="rtl"] .category-sub-product .product:nth-of-type(3n) {
     border-left: 1px solid #ededed;
   }
-  html[dir="rtl"] .product:nth-of-type(2n) {
+  html[dir="rtl"] .category-sub-product .product:nth-of-type(2n) {
     border-left: none;
   }
-  html[dir="ltr"] .product:nth-of-type(3n) {
+  html[dir="ltr"] .category-sub-product .product:nth-of-type(3n) {
     border-right: 1px solid #ededed;
   }
-  html[dir="ltr"] .product:nth-of-type(2n) {
+  html[dir="ltr"] .category-sub-product .product:nth-of-type(2n) {
     border-right: none;
   }
 
