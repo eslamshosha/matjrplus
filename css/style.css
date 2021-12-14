@@ -1166,6 +1166,9 @@ html[dir="rtl"] .social {
     flex-direction: column;
     text-align: center;
   }
+  .right-text{
+    margin-bottom: 10px;
+  }
   .design-text {
     display: flex;
     align-items: center;
