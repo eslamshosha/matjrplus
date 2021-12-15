@@ -66,6 +66,50 @@ $('.overlay-box').click(function () {
             },
         },
     });
+    ///////// **product-qty** ///////// 
+    $(".qty-plus").on('click', function () {
+        var $parentElm = $(this).parents(".item-qty");
+        var maxVal = parseInt($parentElm.find(".qty-input").attr("data-max"));
+        var value = $parentElm.find(".qty-input").val();
+        if (value < maxVal) {
+            value++;
+        }
+        $parentElm.find(".qty-input").val(value);
+    });
+    $(".qty-minus").on('click', function () {
+        var $parentElm = $(this).parents(".item-qty");
+        var minVal = parseInt($parentElm.find(".qty-input").attr("data-min"));
+        var value = $parentElm.find(".qty-input").val();
+        if (value > minVal) {
+            value--;
+        }
+        $parentElm.find(".qty-input").val(value);
+    });
+
+    ///checkout page
+    ///////// ** select address ** ///////// 
+    $(".adress-item>input").on('change', function () {
+        if ($(this).is(":checked")) {
+
+            var addressText = $.trim($(this).siblings(".address-text").text())
+            $(".locationInput").val(addressText)
+            $('#addressBook-modal').modal('hide')
+        }
+    });
+    ///////// ** select time ** ///////// 
+    $(".select-date").on('click', function () {
+        if ($("input.select-date").is(":checked")) {
+            $('#date-modal').modal('show')
+        }
+    });
+    if ($(window).width() > 1199) {
+        $(".datePicker").flatpickr({
+            locale: document.dir == 'rtl' ? "ar" : "en",
+            minDate: "today",
+            dateFormat: "d M Y",
+            defaultDate: "today"
+        });
+    }
     //autoComplete
     const autoCompleteJS = new autoComplete({
         data: {

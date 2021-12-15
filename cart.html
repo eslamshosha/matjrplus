@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/autoComplete.css" />
+    <link rel="stylesheet" href="css/flatpickr.min.css">
     <link rel="stylesheet" href="css/swiper.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -395,77 +396,301 @@
         </header>
         <!-- header section -->
         <!-- contact-section -->
-        <section class="content-section contact-content">
+        <section class="content-section cart-content">
           <div class="container">
-            <div class="contact-cont">
-              <ul class="breadcrumb">
-                <li><a href="#">الرئيسية</a></li>
-                <li><a href="#">تمور</a></li>
-                <li><a href="#">تمور</a></li>
-              </ul>
-              <h2 class="page-title">
-                  اتصل بنا
-              </h2>
-              <!--map-->
-              <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d27353.7006982685!2d31.409087!3d31.0203262!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sar!2seg!4v1629648709252!5m2!1sar!2seg" allowfullscreen="" class="content-map"></iframe>
-              <div class="contant-container">
-                  <div class="row">
-                      <div class="col-lg-6">
-                          <h3 class="contact-title">
-                              ارسل لنا إقتراحك أو شكاوك
-                          </h3>
-                          <form class="contact-form">
-                              <div class="float-field">
-                                  <input type="text" placeholder="الاسم بالكامل">
-                                  <label>الاسم بالكامل</label>
-                              </div>
-                              <div class="float-field">
-                                  <input type="email" placeholder="البريد الإلكتروني">
-                                  <label>البريد الإلكتروني</label>
-                              </div>
-                              <div class="float-field">
-                                  <input type="number" placeholder="رقم الجوال">
-                                  <label>رقم الجوال</label>
-                              </div>
-                              <div class="float-field">
-                                  <input type="text" placeholder="نص الرسالة">
-                                  <label>نص الرسالة</label>
-                              </div>
-                              <button class="submit-btn">
-                                  إرسال
-                              </button>
-                          </form>
-                      </div>
-                      <div class="col-lg-6">
-                          <h3 class="contact-title">
-                              بيانات التواصل
-                          </h3>
-                          <div class="contact-list">
-                              <div class="contact-item">
-                                  <i class="item-icon fas fa-home"></i>
-                                  <span class="item-name">
-                                      الرياض - المملكة العربية السعودية
-                                  </span>
-                              </div>
-                              <div class="contact-item">
-                                  <a href="tel:920004343"><i class="item-icon fas fa-phone"></i></a>
-                                  <span class="item-name">
-                                      920004343
-                                  </span>
-                              </div>
-                              <div class="contact-item">
-                                <a href="mailto:920004343"><i class="item-icon fas fa-envelope"></i></a>
-                                  <span class="item-name">
-                                      info@now-sa.com
-                                  </span>
-                              </div>
-                          </div>
-                      </div>
+            <ul class="breadcrumb">
+              <li><a href="#">الرئيسية</a></li>
+              <li><a href="#">تمور</a></li>
+              <li><a href="#">تمور</a></li>
+            </ul>
+            <h2 class="page-title">سلة الشراء</h2>
+            <div class="cart-items">
+              <div class="cart-item">
+                <a href="product.html" class="cart-img">
+                  <img src="images/product-test.jpg" />
+                </a>
+                <div class="cart-item-info">
+                  <a href="product.html" class="cart-name">
+                    جهاز فلترة المياه من رومر
+                  </a>
+                  <div class="qty-price">
+                    <div class="item-qty">
+                      <a role="button" class="qty-control qty-plus">
+                        <i class="fas fa-plus-circle"></i>
+                      </a>
+                      <a role="button" class="qty-control qty-minus">
+                        <i class="fas fa-minus-circle"></i>
+                      </a>
+                      <input
+                        type="number"
+                        class="qty-input"
+                        value="1"
+                        data-max="10"
+                        data-min="1"
+                      />
+                    </div>
+                    <strong class="item-price"> 750 ريال </strong>
+                    <a role="button" class="item-delete">
+                      <i class="fas fa-times-circle"></i>
+                    </a>
                   </div>
+                </div>
               </div>
+              <div class="cart-item lazy-head-img">
+                <a href="service.html" class="cart-img loaded-img">
+                  <img src="images/product-test.jpg" />
+                </a>
+                <div class="cart-item-info">
+                  <a href="service.html" class="cart-name">
+                    جهاز فلترة المياه من رومر
+                  </a>
+                  <div class="qty-price">
+                    <div class="item-qty">
+                      <a role="button" class="qty-control qty-plus">
+                        <i class="fas fa-plus-circle"></i>
+                      </a>
+                      <a role="button" class="qty-control qty-minus">
+                        <i class="fas fa-minus-circle"></i>
+                      </a>
+                      <input
+                        type="number"
+                        class="qty-input"
+                        value="1"
+                        data-max="10"
+                        data-min="1"
+                      />
+                    </div>
+                    <strong class="item-price"> 750 ريال </strong>
+                    <a role="button" class="item-delete">
+                      <i class="fas fa-times-circle"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="cart-item lazy-head-img">
+                <a href="product.html" class="cart-img loaded-img">
+                  <img src="images/product-test.jpg" />
+                </a>
+                <div class="cart-item-info">
+                  <a href="product.html" class="cart-name">
+                    جهاز فلترة المياه من رومر
+                  </a>
+                  <div class="qty-price">
+                    <div class="item-qty">
+                      <a role="button" class="qty-control qty-plus">
+                        <i class="fas fa-plus-circle"></i>
+                      </a>
+                      <a role="button" class="qty-control qty-minus">
+                        <i class="fas fa-minus-circle"></i>
+                      </a>
+                      <input
+                        type="number"
+                        class="qty-input"
+                        value="1"
+                        data-max="10"
+                        data-min="1"
+                      />
+                    </div>
+                    <strong class="item-price"> 750 ريال </strong>
+                    <a role="button" class="item-delete">
+                      <i class="fas fa-times-circle"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+          <hr />
+          <div class="container">
+            <div class="code-inputs">
+              <div class="code-input-cont">
+                <label> كوبون الخصم </label>
+                <div class="code-input">
+                  <input
+                    class="active"
+                    type="text"
+                    placeholder="اكتب كود كوبون الخصم هنا"
+                    value="OC215JE81"
+                  />
+                  <button class="code-btn-input">
+                    <i class="fas fa-check"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="code-input-cont">
+                <label> قسائم الشراء </label>
+                <div class="code-input">
+                  <input type="text" placeholder="اكتب كود قسيمة الشراء هنا" />
+                  <button class="code-btn-input">
+                    <i class="fas fa-check"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="container">
+            <div class="totals">
+              <div class="total">
+                <span class="total-title"> إجمالي الطلب </span>
+                <span class="total-number"> 2250 ريال </span>
+              </div>
+              <div class="total">
+                <span class="total-title"> تكلفة التوصيل </span>
+                <span class="total-number"> 10 ريال </span>
+              </div>
+              <div class="total">
+                <span class="total-title"> ضريبة القيمة المضافة </span>
+                <span class="total-number"> 339 ريال </span>
+              </div>
+              <div class="total">
+                <span class="total-title"> الإجمالي </span>
+                <span class="total-number"> 2599 ريال </span>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="cart-btn"> إتمام الطلب </a>
         </section>
         <!-- contact-section -->
+        <!--checkout-section-->
+        <section class="content-section checkout-content">
+          <div class="container">
+            <h2 class="page-title">انهاء الطلب</h2>
+            <div class="ship-hint">
+              <i class="fas fa-info-circle"></i>
+              <span>
+              الحد الأدني للتوصيل لعنوانك الحالي 150 ريال لإجمالي الطلب
+              </span>
+            </div>
+            <div class="checkout-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d27353.7006982685!2d31.409087!3d31.0203262!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sar!2seg!4v1629648709252!5m2!1sar!2seg"
+                allowfullscreen=""
+                class="checkout-map-frame"
+              ></iframe>
+              <div class="locationInput-container">
+                <input type="text" class="locationInput" />
+                <a
+                  role="button"
+                  class="adressBook"
+                  data-toggle="modal"
+                  data-target="#addressBook-modal"
+                >
+                  <i class="fas fa-address-book"></i>
+                </a>
+              </div>
+            </div>
+            <div class="payment-methods-content">
+              <h2 class="page-title">حدد طريقة الدفع</h2>
+              <div class="payment-methods">
+                <label
+                  class="payment-method lazy-head-img"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title=""
+                  data-original-title="Cash On Delivery"
+                >
+                  <input type="radio" name="payment-methods" value="01" />
+                  <div class="payment-img loaded-img">
+                    <img
+                      src="./images/pay-images/01.png"
+                    />
+                  </div>
+                </label>
+                <label
+                  class="payment-method lazy-head-img"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title=""
+                  data-original-title="Visa &amp; MasterCard"
+                >
+                  <input type="radio" name="payment-methods" value="02" />
+                  <div class="payment-img loaded-img">
+                    <img
+                      src="./images/pay-images/02.png"
+                    />
+                  </div>
+                </label>
+                <label
+                  class="payment-method lazy-head-img"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title=""
+                  data-original-title="mada"
+                >
+                  <input type="radio" name="payment-methods" value="03" />
+                  <div class="payment-img loaded-img">
+                    <img
+                      src="./images/pay-images/03.png"
+                    />
+                  </div>
+                </label>
+                <label
+                  class="payment-method lazy-head-img"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title=""
+                  data-original-title="Sdad"
+                >
+                  <input type="radio" name="payment-methods" value="04" />
+                  <div class="payment-img loaded-img">
+                    <img
+                      src="./images/pay-images/04.png"
+                    />
+                  </div>
+                </label>
+                <label
+                  class="payment-method lazy-head-img"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title=""
+                  data-original-title="Bank transfer"
+                >
+                  <input type="radio" name="payment-methods" value="05" />
+                  <div class="payment-img loaded-img">
+                    <img
+                      src="./images/pay-images/05.png"
+                    />
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="delivery-time-content">
+              <h2 class="page-title">حدد موعد التوصيل</h2>
+              <div class="delivery-time">
+                <label class="delivery-item">
+                  <input
+                    type="radio"
+                    name="delivery-time"
+                    value="immediately"
+                  />
+                  <div class="delivery-item-text">
+                    <div class="text">
+                      <i class="fas fa-stopwatch"></i>
+                      فوري
+                    </div>
+                  </div>
+                </label>
+                <label class="delivery-item">
+                  <input
+                    type="radio"
+                    name="delivery-time"
+                    class="select-date"
+                  />
+                  <div class="delivery-item-text">
+                    <div class="text">
+                      <i class="fas fa-clock"></i>
+                      تحديد موعد
+                    </div>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <a href="status.html" class="cart-btn"> إتمام الطلب</a>
+          </div>
+        </section>
+        <!--checkout-section-->
         <!-- footer section -->
         <footer>
           <div class="container-fluid">
@@ -628,6 +853,117 @@
           </div>
         </footer>
         <!-- footer section -->
+        <!-- Start Adress Book Modal -->
+        <div class="modal fade addressBook-modal" id="addressBook-modal" style="display: none;" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-body">
+                      <div class="address-list">
+                          <label class="adress-item">
+                              <input type="radio" name="adressBook" value="01">
+                              <div class="adress-head">
+                                  <span class="name">
+                                      Sayed Talhawy
+                                  </span>
+                                  <span class="checkmark">
+                                      <i class="fas fa-check-circle"></i>
+                                  </span>
+                              </div>
+                              <p class="address-text">
+                                  الأخيار، الجزيرة، الرياض 14251 2229، السعودية
+                              </p>
+                              <strong class="address-phone">
+                                  0540000000
+                              </strong>
+                          </label>
+                          <label class="adress-item">
+                              <input type="radio" name="adressBook" value="02">
+                              <div class="adress-head">
+                                  <span class="name">
+                                      Sayed Talhawy
+                                  </span>
+                                  <span class="checkmark">
+                                      <i class="fas fa-check-circle"></i>
+                                  </span>
+                              </div>
+                              <p class="address-text">
+                                  الأخيار، الجزيرة، الرياض 14251 2229، السعودية
+                              </p>
+                              <strong class="address-phone">
+                                  0540000000
+                              </strong>
+                          </label>
+                          <label class="adress-item">
+                              <input type="radio" name="adressBook" value="03">
+                              <div class="adress-head">
+                                  <span class="name">
+                                      Sayed Talhawy
+                                  </span>
+                                  <span class="checkmark">
+                                      <i class="fas fa-check-circle"></i>
+                                  </span>
+                              </div>
+                              <p class="address-text">
+                                  الأخيار، الجزيرة، الرياض 14251 2229، السعودية
+                              </p>
+                              <strong class="address-phone">
+                                  0540000000
+                              </strong>
+                          </label>
+                      </div>
+                  </div>
+                  <div class="modal-footer">
+                      <a role="button" data-dismiss="modal" class="continue-btn">
+                          متابعة
+                      </a>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <!-- End Adress Book Modal -->
+        <!-- Start Adress Book Modal -->
+        <div class="modal fade date-modal" id="date-modal" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title">اختر يوم التوصيل</h5>
+                      <div class="date-picker-container">
+                          <input type="text" class="datePicker flatpickr-input" readonly="readonly">
+                          <span class="fas fa-calendar-alt"></span>
+                      </div>
+                  </div>
+                  <div class="modal-body">
+                      <h5 class="modal-title">حدد الفترة</h5>
+                      <div class="times-list">
+                          <label class="time-range">
+                              <input type="radio" name="time-range">
+                              <span class="time-text">
+                                  من 08:00 صباحًا إلى 11:00 صباحًا
+                              </span>
+                          </label>
+                          <label class="time-range">
+                              <input type="radio" name="time-range">
+                              <span class="time-text">
+                                  من 01:00 مساءًا إلى 04:00 مساءًا
+                              </span>
+                          </label>
+                          <label class="time-range">
+                              <input type="radio" name="time-range">
+                              <span class="time-text">
+                                  من 06:00 مساءًا إلى 10:00 مساءًا
+                              </span>
+                          </label>
+                      </div>
+                  </div>
+                  <div class="modal-footer">
+                      <a role="button" data-dismiss="modal" class="continue-btn">
+                          متابعة
+                      </a>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <!-- End Adress Book Modal -->
         <!-- Start Login Modal -->
         <div class="modal fade login-modal" id="login-modal" aria-hidden="true">
           <div class="modal-dialog">
@@ -687,11 +1023,13 @@
       </div>
     </div>
     <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
     <script src="js/autoComplete.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/bootstrap-select.min.js"></script>
     <script src="js/wow.min.js"></script>
+    <script src="js/flatpickr.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
