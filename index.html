@@ -259,11 +259,65 @@
                                                 </ul>
                                         </div>
                                     </div>
-                                    <div class="add-to">
-                                        <button class="add-btn">
+                                    <div class="add-to cart">
+                                        <button class="add-btn" data-toggle="dropdown" class="cartbtn" aria-expanded="false">
                                             <span class="fas fa-shopping-cart icon-ancor"></span>
                                             <span class="items-count">0</span>
                                         </button>
+                                        <ul class="dropdown-menu pull-right">
+                                            <li>
+                                                <table class="table table-striped">
+                                                    <tbody>
+                                                        <tr>
+                                                        <td class="text-center">
+                                                            <a href="">
+                                                                <img src="images/delivery.png" alt="اسم المنتج" title="اسم المنتج" class="img-thumbnail">
+                                                            </a>
+                                                        </td>
+                                                        <td class="text-left"><a href="">اسم المنتج</a> </td>
+                                                        <td class="text-right">x 2</td>
+                                                        <td class="text-right">S.R 500</td>
+                                                        <td class="text-center">
+                                                            <button type="button"title="حذف" class="btn btn-danger btn-xs">
+                                                                <i class="fa fa-times"></i>
+                                                            </button>
+                                                        </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <table class="table table-bordered">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="text-right">
+                                                                    <strong>الاجمالي</strong>
+                                                                </td>
+                                                                <td class="text-right">S.R 500</td>
+                                                                </tr>
+                                                                <tr>
+                                                                <td class="text-right">
+                                                                    <strong>الاجمالي النهائي</strong>
+                                                                </td>
+                                                                <td class="text-right">S.R 500</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <p class="text-right cartbtns">
+                                                    <a href="">
+                                                        <i class="fa fa-shopping-cart"></i> معاينة السلة
+                                                    </a>
+                                                    <a href="">
+                                                        <i class="fa fa-reply"></i> إنهاء الطلب
+                                                    </a>
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                            <p class="text-center">سلة الشراء فارغة !</p>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -1114,6 +1168,31 @@
                 </div>
             </div>
             <!-- End Login Modal -->
+            <!-- Start addto-cartModal -->
+            <!-- <div class="modal fade addto-cart-modal" id="add-modal" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                       <div class="add-model-icon">
+                            <i class="fas fa-check-circle"></i>
+                            <p>تم اضافة المنتج الى السلة</p>
+                       </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="add-cart-btn">
+                            <a href="#" class="cart-btn-continue">
+                                متابعه التسوق
+                            </a>
+                            <a href="#" class="cart-btn-finish">
+                                انهاء الطلب
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <button  data-toggle="modal" data-target="#add-modal"></button> -->
+            <!-- End addto-cart Modal -->
             <!-- overlay -->
             <div class="overlay-box"></div>
             <div class="overlay-box2"></div>
