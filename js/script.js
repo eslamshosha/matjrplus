@@ -14,7 +14,16 @@ $('.overlay-box').click(function () {
 //sidenav
   $(document).ready(function() {
       new WOW().init();
-      
+
+      $(".logged-drop").on("click", function () {
+        $(".logged-content").toggleClass("open");
+        $('.overlay-box2').fadeToggle('500');
+      });
+    $(".overlay-box2").on("click", function () {
+        $(".logged-content").removeClass("open");
+        $('.overlay-box2').fadeToggle('500')
+      });
+
     // //main Slider Carousel
     ///////// ** main** /////////
     var specials = new Swiper('.main-slider .swiper-container', {
