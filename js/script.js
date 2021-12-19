@@ -9,6 +9,30 @@ $(".overlay-box").click(function () {
   $("body").removeClass("overflow");
   $(".overlay-box").fadeOut("500");
 });
+///////fixednav
+// NAVBAR STICKY
+var $stickyNav = $(".navbar-sticky");
+
+$(window).on("scroll load", function () {
+  var scroll = $(window).scrollTop();
+  if (scroll >= 120) {
+    $stickyNav.addClass("navbar-sticky-moved-up");
+  } else {
+    $stickyNav.removeClass("navbar-sticky-moved-up");
+  }
+  // apply transition
+  if (scroll >= 150) {
+    $stickyNav.addClass("navbar-sticky-transitioned");
+  } else {
+    $stickyNav.removeClass("navbar-sticky-transitioned");
+  }
+  // sticky on
+  if (scroll >= 250) {
+    $stickyNav.addClass("navbar-sticky-on");
+  } else {
+    $stickyNav.removeClass("navbar-sticky-on");
+  }
+});
 
 //sidenav
 $(document).ready(function () {
@@ -110,7 +134,7 @@ $(document).ready(function () {
     }
   });
 
-  $('.new-address-select').select2();
+  $(".new-address-select").select2();
 
   if ($(window).width() > 1199) {
     // $(".datePicker").flatpickr({
