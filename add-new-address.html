@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/autoComplete.css">
+    <link rel="stylesheet" href="css/select2.min.css">
     <link rel="stylesheet" href="css/swiper.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -340,183 +340,117 @@
                 </nav>
             </header>
             <!-- header section -->
-            <!-- product-category -->
-            <div class="product-category">
-                <div class="container">
-                    <div class="subcategory-cont">
-                        <ul class="breadcrumb">
-                            <li><a href="#">الرئيسية</a></li>
-                            <li><a href="#">تمور</a></li>
-                            <li><a href="#">تمور</a></li>
-                            <li><a href="#">اسم المنتج</a></li>
-                        </ul>
-                        <div class="subcategory-product">
-                            <div class="row product-row">
-                                <div class="col-sm-6">
-                                    <div class="row ">
-                                        <div class="col-sm-1 hidden-xs custom-padding">
-                                            <div class="product-thumbnail">
-                                                <a class="thumbnail" role="button" data-fancybox="gallery" href="./images/product-test.jpg" title="اسم المنتج">
-                                                    <img src="./images/product-test.jpg" alt="اسم المنتج">
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-11 col-xs-12 main-thumbnails">
-                                            <a class="thumbnail product-mainimg active-img" data-fancybox="gallery" href="./images/product-test.jpg" title="اسم المنتج">
-                                                <img class="img-responsive" src="./images/product-test.jpg" alt="اسم المنتج">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 subcategory-product-cont">
-                                    <div class="subcategory-head">
-                                        <h2>اسم المنتج</h2>
-                                        <div class="btn-group">
-                                        <button type="button" data-toggle="tooltip" class="btn btn-default" title="">
-                                            <i class="fa fa-heart"></i>
-                                        </button>
-                                        <button type="button" data-toggle="tooltip" class="btn btn-default" title="">
-                                            <i class="fas fa-exchange-alt"></i>
-                                        </button>
-                                        </div>
-                                    </div>
-                                    <ul class="list-unstyled type-list">
-                                        <li>النوع : الموديل</li>
-                                        <li>حالة التوفر : متوفر</li>
-                                    </ul>
-                                    <div class="product_flexbox">
-                                        <ul class="list-unstyled list-inline prodprices">
-                                            <li>
-                                                <h3 class="product-first-price">S.R 300</h3>
-                                            </li>
-                                            <li>
-                                                <h3 class="product-last-price">S.R 250</h3>
-                                            </li>
-                                        </ul>
-                                        <div class="quantity_cart">
-                                            <label class="control-label">الكمية:</label>
-                                            <input type="number" name="quantity" value="1" size="2" id="input-quantity" class="form-control">
-                                            <input type="hidden" name="product_id" value="78">
-                                            <button type="button" id="button-cart" class="btn btn-primary btn-lg btn-block">
-                                                <i class="fas fa-shopping-cart"></i>&nbsp; اضافة للسلة</button>
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <div class="rating">
-                                        <p>
-                                            <div class="rate">
-                                                <input type="radio" id="star5" name="rate" value="5" />
-                                                <label for="star5" title="text">5 stars</label>
-                                                <input type="radio" id="star4" name="rate" value="4" />
-                                                <label for="star4" title="text">4 stars</label>
-                                                <input type="radio" id="star3" name="rate" value="3" />
-                                                <label for="star3" title="text">3 stars</label>
-                                                <input type="radio" id="star2" name="rate" value="2" />
-                                                <label for="star2" title="text">2 stars</label>
-                                                <input type="radio" id="star1" name="rate" value="1" />
-                                                <label for="star1" title="text">1 star</label>
-                                              </div>
-                                            &nbsp;
-                                            <a href="" class="rating-commit">(0 التقييمات)</a> /
-
-                                            <a href="#" class="rating-commit" id="comment-link">كتابة تعليق</a>
-                                        </p>
-                                    </div>
-                                </div>
+            <!-- register-section-->
+            <div class="container">
+                <ul class="breadcrumb">
+                  <li><a href="#">الرئيسية</a></li>
+                  <li><a href="#">دفتر العناوين   </a></li>
+                  <li><a href="#">اضافة عنوان جديد</a></li>
+                </ul>
+              </div> 
+              <div class="content-section address-book-content">
+                  <div class="container">
+                      <div class="row">
+                        <div class="col-lg-9">
+                            <div class="acc-head">
+                                <h2 class="acc-title">
+                                    اضافة عنوان جديد
+                                </h2>
                             </div>
-                            <ul class="nav nav-tabs product-tabs">
-                                <li class="active"><a href="#tab-description" data-toggle="tab">تفاصيل</a></li>
-                                <li><a href="#tab-review" data-toggle="tab">التقييمات (0)</a></li>
-                            </ul>
-                            <div class="tab-content proddtls">
-                                <div class="tab-pane active" id="tab-description">
+                            <form class="address-book-form">
+                                <div class="float-field">
+                                    <input type="text" placeholder="الاسم بالكامل">
+                                    <label>الاسم بالكامل</label>
                                 </div>
-                                <div class="tab-pane" id="tab-review">
-                                <form class="form-horizontal" id="form-review">
-                                    <div id="review">
-                                        <p>لا يوجد أي تعليقات لهذا المنتج.</p>
-                                        <table class="table table-striped table-bordered">
-                                            <tbody>
-                                                <tr  class="rate-head">
-                                                    <td style="width: 50%;">
-                                                        <strong>ISLAM&nbsp;shosha</strong>
-                                                    </td>
-                                                    <td class="text-right">2021/12/16</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="border-commet" colspan="2">
-                                                        <p>goood item for shopping</p>
-                                                    <span class="fa fa-stack">
-                                                        <i class="fa fa-star fa-stack-2x"></i>
-                                                        <i class="fa fa-star-o fa-stack-2x"></i>
-                                                    </span>
-                                                    <span class="fa fa-stack">
-                                                        <i class="fa fa-star fa-stack-2x"></i>
-                                                        <i class="fa fa-star-o fa-stack-2x"></i></span>
-                                                    <span class="fa fa-stack">
-                                                        <i class="fa fa-star fa-stack-2x"></i>
-                                                        <i class="fa fa-star-o fa-stack-2x"></i>
-                                                    </span>
-                                                    <span class="fa fa-stack">
-                                                        <i class="fa fa-star fa-stack-2x"></i>
-                                                        <i class="fa fa-star-o fa-stack-2x"></i>
-                                                    </span> <span class="fa fa-stack">
-                                                        <i class="fa fa-star fa-stack-2x"></i>
-                                                        <i class="fa fa-star-o fa-stack-2x"></i>
-                                                    </span>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <h2>كتابة تعليق</h2>
-                                    <div class="comment-group required" id="#comment">
-                                        <div class="col-sm-12">
-                                            <label class="control-label" for="input-name">الاسم:</label>
-                                            <input type="text" name="name" value="" id="input-name" class="form-control" >
-                                        </div>
-                                    </div>
-                                    <div class="comment-group required">
-                                        <div class="col-sm-12">
-                                            <label class="control-label" for="input-review">اضافة تعليق:</label>
-                                            <textarea name="text" rows="5" id="input-review" class="form-control"></textarea>
-                                            <div class="help-block">
-                                                <span class="text-danger">انتبه: </span>لم يتم تفعيل اكواد HTML !
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="comment-group required">
-                                        <div class="col-sm-12">
-                                            <div class="rate-cont">
-                                                <label class="control-label">التقييم:</label>
-                                                <div class="rate">
-                                                    <input type="radio" id="star5" name="rate" value="5" />
-                                                    <label for="star5" title="text">5 stars</label>
-                                                    <input type="radio" id="star4" name="rate" value="4" />
-                                                    <label for="star4" title="text">4 stars</label>
-                                                    <input type="radio" id="star3" name="rate" value="3" />
-                                                    <label for="star3" title="text">3 stars</label>
-                                                    <input type="radio" id="star2" name="rate" value="2" />
-                                                    <label for="star2" title="text">2 stars</label>
-                                                    <input type="radio" id="star1" name="rate" value="1" />
-                                                    <label for="star1" title="text">1 star</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="buttons clearfix">
-                                        <div class="pull-right">
-                                            <button type="button" id="button-review" class="btn btn-primary">متابعة</button>
-                                        </div>
-                                    </div>
-                                </form>
+                                <div class="float-field">
+                                    <input type="number" placeholder="رقم الجوال">
+                                    <label>رقم الجوال</label>
                                 </div>
+                                <div class="float-field">
+                                    <input type="number" placeholder="رقم الجوال">
+                                    <label>رقم الجوال</label>
                                 </div>
+                                <div class="float-field">
+                                    <input type="number" placeholder="رقم الجوال">
+                                    <label>رقم الجوال</label>
+                                </div>
+                                <div class="float-field">
+                                    <input type="number" placeholder="رقم الجوال">
+                                    <label>رقم الجوال</label>
+                                </div>
+                                <div class="float-field">
+                                    <input type="text" placeholder="اسم الشارع">
+                                    <label>اسم الشارع</label>
+                                </div>
+                                <div class="float-field">
+                                    <input type="text" placeholder="رقم البناية">
+                                    <label>رقم البناية</label>
+                                </div>
+                                <div class="float-field">
+                                    <select class="new-address-select">
+                                        <option>
+                                            السعودية
+                                        </option>
+                                        <option>
+                                            الامارات العربية المتحدة
+                                        </option>
+                                        <option>
+                                            البحرين
+                                        </option>
+                                        <option>
+                                            الكويت
+                                        </option>
+                                        <option>
+                                            سلطنة عًمان
+                                        </option>
+                                        <option>
+                                            قطر
+                                        </option>
+                                    </select>
+                                    <label>البلد</label>
+                                </div>
+                                <div class="float-field">
+                                    <input type="file" placeholder="رقم البناية">
+                                    <label>رقم البناية</label>
+                                </div>
+                                <div class="new-address-map">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d27353.7006982685!2d31.409087!3d31.0203262!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sar!2seg!4v1629648709252!5m2!1sar!2seg"
+                                        allowfullscreen=""
+                                        class="checkout-map-frame">
+                                    </iframe>
+                                    <div class="locationInput-container">
+                                        <input type="text" class="locationInput">
+                                    </div>
+                                </div>
+                                <button class="submit-btn">
+                                    اضافة
+                                </button>
+                            </form>
+        
                         </div>
-                    </div>
-                </div>
-            </div>
-            <!-- product-category -->
+                        <aside id="column-right" class="col-sm-3 hidden-xs">
+                            <div class="list-group">
+                            <a href="#" class="list-group-item">دخول</a>
+                            <a href="#" class="list-group-item  active">تسجيل</a>
+                            <a href="#" class="list-group-item">نسيت كلمة المرور</a>
+                            <a href="#" class="list-group-item">حسابي</a>
+                            <a href="#" class="list-group-item">دفتر العناويين</a>
+                            <a href="#" class="list-group-item">قائمة رغباتي</a>
+                            <a href="#" class="list-group-item">طلباتي</a>
+                            <a href="#" class="list-group-item">ملفات التنزيل الرقمية</a>
+                            <a href="#" class="list-group-item">المدفوعات المتكررة</a>
+                            <a href="#" class="list-group-item">نقاط المكافآت</a>
+                            <a href="#" class="list-group-item">المنتجات المرتجعة</a>
+                            <a href="#" class="list-group-item">رصيدي</a>
+                            <a href="#" class="list-group-item">القائمة البريدية</a>
+                            </div>
+                        </aside>
+                      </div>
+                  </div>
+              </div>
+            
+            <!-- register-section -->
             <!-- footer section -->
             <footer>
                 <div class="container-fluid">
@@ -653,7 +587,7 @@
                     </div>
                     <div class="modal-body">
                     <form class="login-form">
-                        <div class="form-group">
+                        <div class="form-margin">
                             <button class="group-btn face-btn">
                                 <i class="fab fa-facebook-square"></i>
                                 تسجيل الدخول عن طريق فيسبوك
@@ -698,8 +632,8 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/select2.min.js"></script>
     <script src="js/wow.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
     <script src="js/script.js"></script>         
 </body>
 
