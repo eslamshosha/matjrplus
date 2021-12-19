@@ -4593,6 +4593,16 @@ html[dir="ltr"]
 }
 
 /*product search page*/
+.content-head{
+  color: #465a61;
+  font-size: 30px;
+  font-weight: 700;
+}
+.content-h2{
+  color: #465a61;
+  font-size: 27px;
+  font-weight: 500;
+}
 .label-cont{
   padding-top: 40px;
 }
