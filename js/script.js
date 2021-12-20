@@ -46,7 +46,9 @@ $(document).ready(function () {
     $(".logged-content").removeClass("open");
     $(".overlay-box2").fadeToggle("500");
   });
-
+  $(".drop-link span").click(function (e) {
+    e.preventDefault();
+  })
   // //main Slider Carousel
   ///////// ** main** /////////
   var specials = new Swiper(".main-slider .swiper-container", {
