@@ -4719,4 +4719,10 @@ html[dir="ltr"]
   margin-bottom: -30px;
   min-height: calc(100vh - 549.5px);
 }
+@media (max-width: 767px){
+  .small-content-height{
+    margin-bottom: 0;
+    min-height: auto;
+  }
+}
 /*height of small content*/
