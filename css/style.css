@@ -102,15 +102,16 @@ a.custom-link {
 .sidenav a:hover {
   color: #a0aeb3;
 }
-.drop-link::after {
+.drop-link i {
   content: "";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   font-size: 8px;
+  padding: 5px;
   color: #7b898e;
   transition: all 0.5s ease-out;
 }
-.drop-link[aria-expanded="true"]:after {
+.drop-link span[aria-expanded="true"] i {
   transform: rotate(180deg);
 }
 .drop-list {
@@ -4713,3 +4714,9 @@ html[dir="ltr"]
 }
 /*product search page*/
 
+/*height of small content*/
+.small-content-height{
+  margin-bottom: -30px;
+  min-height: calc(100vh - 549.5px);
+}
+/*height of small content*/
