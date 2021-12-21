@@ -428,7 +428,7 @@ header {
   max-width: 125px;
 }
 .footer-figure img {
-  max-width: 155px;
+  max-width: 125px;
 }
 .icon-logo {
   display: flex;
@@ -711,7 +711,7 @@ html[dir="ltr"] .menu-link {
   overflow: hidden;
   width: 100%;
   overflow: hidden;
-  padding-top: 53.1%;
+  padding-top: 30.1%;
   background: white;
   position: relative;
 }

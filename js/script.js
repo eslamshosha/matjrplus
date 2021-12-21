@@ -32,6 +32,8 @@ $(window).on("scroll load", function () {
   } else {
     $stickyNav.removeClass("navbar-sticky-on");
   }
+  var headerHeight = $("header").outerHeight();
+    $("header").css("height", headerHeight + "px");
 });
 
 //sidenav
@@ -153,15 +155,6 @@ $(document).ready(function () {
   });
 
   $(".new-address-select").select2();
-
-  if ($(window).width() > 1199) {
-    // $(".datePicker").flatpickr({
-    //   locale: document.dir == "rtl" ? "ar" : "en",
-    //   minDate: "today",
-    //   dateFormat: "d M Y",
-    //   defaultDate: "today",
-    // });
-  }
   
   if ($(window).width() <= 991) {
     $(".register-section .user-ancor").removeAttr("data-toggle");
@@ -179,4 +172,15 @@ $(document).ready(function () {
     );
     $("#input-review").focus();
   });
+
+  if ($(window).width() > 1199) {
+    // $(".datePicker").flatpickr({
+    //   locale: document.dir == "rtl" ? "ar" : "en",
+    //   minDate: "today",
+    //   dateFormat: "d M Y",
+    //   defaultDate: "today",
+    // });
+  }
+  
+  
 });
