@@ -15,19 +15,19 @@ var $stickyNav = $(".navbar-sticky");
 
 $(window).on("scroll load", function () {
   var scroll = $(window).scrollTop();
-  if (scroll >= 120) {
+  if (scroll >= 50) {
     $stickyNav.addClass("navbar-sticky-moved-up");
   } else {
     $stickyNav.removeClass("navbar-sticky-moved-up");
   }
   // apply transition
-  if (scroll >= 150) {
+  if (scroll >= 50) {
     $stickyNav.addClass("navbar-sticky-transitioned");
   } else {
     $stickyNav.removeClass("navbar-sticky-transitioned");
   }
   // sticky on
-  if (scroll >= 250) {
+  if (scroll >= 50) {
     $stickyNav.addClass("navbar-sticky-on");
   } else {
     $stickyNav.removeClass("navbar-sticky-on");
@@ -120,6 +120,22 @@ $(document).ready(function () {
     $parentElm.find(".qty-input").val(value);
   });
 
+  //autoComplete
+  const autoCompleteJS = new autoComplete({
+    data: {
+      src: [
+        "Sauce - Thousand Island",
+        "Wild Boar - Tenderloin",
+        "Goat - Whole Cut",
+      ],
+    },
+    resultItem: {
+      highlight: {
+        render: true,
+      },
+    },
+  });
+
   ///checkout page
   ///////// ** select address ** /////////
   $(".adress-item>input").on("change", function () {
@@ -146,21 +162,7 @@ $(document).ready(function () {
     //   defaultDate: "today",
     // });
   }
-  //autoComplete
-  const autoCompleteJS = new autoComplete({
-    data: {
-      src: [
-        "Sauce - Thousand Island",
-        "Wild Boar - Tenderloin",
-        "Goat - Whole Cut",
-      ],
-    },
-    resultItem: {
-      highlight: {
-        render: true,
-      },
-    },
-  });
+  
   if ($(window).width() <= 991) {
     $(".register-section .user-ancor").removeAttr("data-toggle");
     $(".register-section .user-ancor").removeAttr("data-target");
