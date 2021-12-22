@@ -33,7 +33,7 @@ $(window).on("scroll load", function () {
     $stickyNav.removeClass("navbar-sticky-on");
   }
   var headerHeight = $("header").outerHeight();
-    $("header").css("height", headerHeight + "px");
+  $("header").css("height", headerHeight + "px");
 });
 
 //sidenav
@@ -50,7 +50,7 @@ $(document).ready(function () {
   });
   $(".drop-link span").click(function (e) {
     e.preventDefault();
-  })
+  });
   // //main Slider Carousel
   ///////// ** main** /////////
   var specials = new Swiper(".main-slider .swiper-container", {
@@ -132,6 +132,17 @@ $(document).ready(function () {
       ],
     },
     resultItem: {
+      element: (item, data) => {
+        // Modify Results Item Style
+        item.style = "display: flex; justify-content: flex-start; align-items: center;";
+        // Modify Results Item Content
+        item.innerHTML = `
+        <img src="../images/product-test.jpg" style="max-width: 40px;>
+        <span style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden; padding-inline-start: 5px">
+          ${data.match}
+        </span>
+        `;
+      },
       highlight: {
         render: true,
       },
@@ -155,7 +166,7 @@ $(document).ready(function () {
   });
 
   $(".new-address-select").select2();
-  
+
   if ($(window).width() <= 991) {
     $(".register-section .user-ancor").removeAttr("data-toggle");
     $(".register-section .user-ancor").removeAttr("data-target");
@@ -181,6 +192,4 @@ $(document).ready(function () {
     //   defaultDate: "today",
     // });
   }
-  
-  
 });

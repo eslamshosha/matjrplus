@@ -239,7 +239,7 @@ a.custom-link {
 .dropdown-content a:hover {
   color: #53b847;
 }
-.cart .dropdown-menu .img-thumbnail{
+.cart .dropdown-menu .img-thumbnail {
   max-width: 50px;
 }
 /* Show the dropdown menu on hover */
@@ -259,8 +259,8 @@ a.custom-link {
   padding-top: 0;
   padding-bottom: 0;
   z-index: 999;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .top-header.navbar-sticky {
   -webkit-transition: none;
@@ -275,13 +275,13 @@ a.custom-link {
   background-color: #fff;
 }
 .top-header.navbar-sticky-transitioned {
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .top-header.navbar-sticky-on {
   margin-top: 0;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   -webkit-box-shadow: rgb(0 0 0 / 10%) 0px 0px 20px;
   box-shadow: rgb(0 0 0 / 10%) 0px 0px 20px;
 }
@@ -367,7 +367,7 @@ html[dir="rtl"] .text-right {
 .cart .dropdown-menu > li {
   padding: 0 10px;
 }
-.cart .dropdown-menu > li:first-of-type{
+.cart .dropdown-menu > li:first-of-type {
   padding: 0;
 }
 /*cart*/
@@ -408,11 +408,11 @@ html[dir="rtl"] .text-right {
 .upper-lang a:hover {
   color: #465a61;
 }
-.first-header .upper-lang a{
+.first-header .upper-lang a {
   color: #465a61;
   padding: 0 5px;
 }
-.first-header .upper-lang a:hover{
+.first-header .upper-lang a:hover {
   color: #53b847;
 }
 /*upper header*/
@@ -486,6 +486,34 @@ header {
 .autoComplete_wrapper > input:hover::placeholder {
   color: #bbbbbb;
 }
+.autoComplete_wrapper > ul > li mark {
+  color: #53b847;
+}
+.autoComplete_wrapper > ul[hidden], .autoComplete_wrapper > ul:empty{
+  z-index: 2;
+}
+.autoComplete_wrapper > ul{
+  z-index: 2;
+}
+.autoComplete_wrapper > input:hover {
+  color: #53b847;
+}
+
+.autoComplete_wrapper > input:focus {
+  color: #53b847;
+  border: 0.06rem solid rgba(83, 184, 71, 0.8);
+}
+.autoComplete_wrapper > input:focus::selection {
+  background-color: rgba(83, 184, 71, 0.15);
+}
+
+.autoComplete_wrapper > input::selection {
+  background-color: rgba(83, 184, 71, 0.15);
+}
+.autoComplete_wrapper > ul > li:hover {
+  cursor: pointer;
+  background-color: rgba(83, 184, 71, 0.15);
+}
 .search-button {
   position: absolute;
   height: 38px;
@@ -550,7 +578,7 @@ html[dir="rtl"] .search-button {
   transition: all 0.3s ease-in-out;
 }
 @media (max-width: 767px) {
-  .register-section .user-ancor{
+  .register-section .user-ancor {
     margin-inline-end: 0;
   }
 }
@@ -681,9 +709,9 @@ html[dir="ltr"] .menu-link {
 
 /*           swiper section                     */
 .main-cont {
-  /* display: grid;
+  display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 12px; */
+  gap: 12px;
   margin-bottom: 30px;
 }
 .main-slider {
@@ -711,7 +739,7 @@ html[dir="ltr"] .menu-link {
   overflow: hidden;
   width: 100%;
   overflow: hidden;
-  padding-top: 30.1%;
+  padding-top: 53.1%;
   background: white;
   position: relative;
 }
@@ -823,7 +851,7 @@ html[dir="ltr"] .menu-link {
 .main-figure {
   height: 100%;
   overflow: hidden;
-  display: none; /*to hide sale img*/
+  /* display: none; */
 }
 .main-figure a {
   display: flex;
@@ -1000,7 +1028,7 @@ html[dir="ltr"] .product {
   line-height: 36px;
   font-weight: 500;
 }
-.thumbnail{
+.thumbnail {
   position: relative;
 }
 @media (max-width: 991px) {
@@ -2417,7 +2445,7 @@ textarea.form-control {
   margin-top: 13px;
 }
 .subcategory-product-cont .qty-price,
-.product .qty-price{
+.product .qty-price {
   justify-content: center;
   padding-bottom: 15px;
   margin-top: 0;
@@ -4672,104 +4700,105 @@ html[dir="ltr"]
   .select2-search--dropdown {
   padding: 5px 10px;
 }
-.select2-container .select2-search--dropdown .select2-search__field:focus-visible{
+.select2-container
+  .select2-search--dropdown
+  .select2-search__field:focus-visible {
   border: none;
   outline: 1px solid #53b847;
 }
-.float-field input[type=file]{
+.float-field input[type="file"] {
   line-height: 45px;
   -webkit-text-fill-color: #465a61 !important;
 }
 
 /*product search page*/
-.content-head{
+.content-head {
   color: #465a61;
   font-size: 30px;
   font-weight: 700;
 }
-.content-h2{
+.content-h2 {
   color: #465a61;
   font-size: 27px;
   font-weight: 500;
 }
-.label-cont{
+.label-cont {
   padding-top: 40px;
 }
-.float-end{
+.float-end {
   display: flex;
   justify-content: flex-end;
   margin-bottom: 30px;
 }
-.float-end .float-field{
+.float-end .float-field {
   flex-direction: row-reverse;
   align-items: center;
   margin-bottom: 0;
 }
-.float-end .float-field label{
+.float-end .float-field label {
   margin-bottom: 0;
   margin-inline-end: 5px;
 }
-.float-end .select2-container{
+.float-end .select2-container {
   width: 220px;
 }
-.pegination-end{
+.pegination-end {
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
-.pegination-center{
+.pegination-center {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.pegination-center .pagination{
+.pegination-center .pagination {
   margin: 0;
 }
-.pegination-text{
+.pegination-text {
   font-weight: 500;
   font-size: 14px;
   color: #465a61;
-  margin:25px 0;
+  margin: 25px 0;
 }
-.pagination>li>a,
-.pagination>li>span{
+.pagination > li > a,
+.pagination > li > span {
   color: #53b847;
   font-weight: 500;
 }
-.pagination>.active>a,
-.pagination>.active>a:focus,
-.pagination>.active>a:hover,
-.pagination>.active>span,
-.pagination>.active>span:focus,
-.pagination>.active>span:hover{
+.pagination > .active > a,
+.pagination > .active > a:focus,
+.pagination > .active > a:hover,
+.pagination > .active > span,
+.pagination > .active > span:focus,
+.pagination > .active > span:hover {
   background-color: #53b847;
   border-color: #53b847;
 }
-@media (max-width: 767px){
+@media (max-width: 767px) {
   .float-cont .select2-container,
-  .float-end .select2-container{
+  .float-end .select2-container {
     width: 100% !important;
   }
-  .label-cont{
+  .label-cont {
     padding: 5px 0;
   }
-  .compare-total{
+  .compare-total {
     margin-bottom: 15px;
   }
-  .float-end .float-field label{
+  .float-end .float-field label {
     width: 100%;
   }
-  
 }
 /*product search page*/
 
 /*height of small content*/
-.small-content-height{
+.small-content-height {
   margin-bottom: -30px;
   min-height: calc(100vh - 549.5px);
 }
-@media (max-width: 767px){
-  .small-content-height{
+@media (max-width: 767px) {
+  .small-content-height {
     margin-bottom: 0;
     min-height: auto;
   }
