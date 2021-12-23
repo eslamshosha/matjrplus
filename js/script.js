@@ -3,11 +3,13 @@ function openNav() {
   $("#main").toggleClass("active");
   $("body").toggleClass("overflow");
   $(".overlay-box").fadeToggle("500");
+  $(".sidenav").toggleClass("active");
 }
 $(".overlay-box").click(function () {
   $("#main").removeClass("active");
   $("body").removeClass("overflow");
   $(".overlay-box").fadeOut("500");
+  $(".sidenav").removeClass("active");
 });
 ///////fixednav
 // NAVBAR STICKY
@@ -32,9 +34,9 @@ $(window).on("scroll load", function () {
   } else {
     $stickyNav.removeClass("navbar-sticky-on");
   }
-  var headerHeight = $("header").outerHeight();
-  $("header").css("height", headerHeight + "px");
 });
+var headerHeight = $("header").outerHeight();
+$("header").css("height", headerHeight + "px");
 
 //sidenav
 $(document).ready(function () {
@@ -134,7 +136,8 @@ $(document).ready(function () {
     resultItem: {
       element: (item, data) => {
         // Modify Results Item Style
-        item.style = "display: flex; justify-content: flex-start; align-items: center;";
+        item.style =
+          "display: flex; justify-content: flex-start; align-items: center;";
         // Modify Results Item Content
         item.innerHTML = `
         <img src="../images/product-test.jpg" style="max-width: 40px;>

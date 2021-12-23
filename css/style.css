@@ -53,7 +53,7 @@ a {
   top: 0;
   background-color: #465a61;
   overflow-x: hidden;
-  transition: 0.5s;
+  transition:all 0.5s ease-in-out;
   z-index: 999999999;
   overflow-y: auto;
 }
@@ -64,8 +64,14 @@ html[dir="rtl"] .sidenav {
 html[dir="ltr"] .sidenav {
   left: -260px;
 }
+html[dir="rtl"] .sidenav.active {
+  right: 0px;
+}
+html[dir="ltr"] .sidenav.active {
+  left: 0px;
+}
 #main {
-  transition: 0.5s;
+  transition:all 0.5s ease-in-out;
 }
 html[dir="rtl"] #main.active {
   transform: translateX(-260px);
@@ -2166,8 +2172,7 @@ textarea.form-control {
   flex-direction: row-reverse;
 } */
 .rate:not(:checked) > input {
-  position: absolute;
-  top: -9999px;
+  display: none;
 }
 .rate:not(:checked) > label {
   float: right;
@@ -3659,6 +3664,12 @@ div:not(.btn-group) > .btn:hover {
   transition: all 0.3s ease-in-out;
   z-index: -1;
 }
+html[dir="ltr"] .single-order .step-icon::before {
+  right: 50%;
+}
+html[dir="rtl"] .single-order .step-icon::before {
+  left: 50%;
+}
 @media (max-width: 1199px) {
   .order-item .step-icon::before {
     width: 300px;
@@ -3667,7 +3678,7 @@ div:not(.btn-group) > .btn:hover {
 html[dir="rtl"] .order-item .step-icon::before {
   left: 50%;
 }
-html[dir="lte"] .order-item .step-icon::before {
+html[dir="ltr"] .order-item .step-icon::before {
   right: 50%;
 }
 .order-item .order-step.done .step-icon::before {
@@ -4804,3 +4815,10 @@ html[dir="ltr"]
   }
 }
 /*height of small content*/
+
+.text-danger {
+  color: #a94442!important;
+}
+a.text-danger:hover {
+  color: #843534!important;
+}
